@@ -27,7 +27,7 @@ if "points" not in st.session_state:
 
 
 # =========================================================
-# 다국어
+# 다국어 문구
 # =========================================================
 TEXT = {
     "한국어": {
@@ -55,7 +55,7 @@ TEXT = {
         "expressions": "번역 표현",
         "popular": "지금 인기 있는 로컬 맛집",
 
-        "map_intro": "자카르타의 숨은 로컬 맛집을 지도에서 확인해보세요.",
+        "map_intro": "자카르타의 다양한 로컬 맛집을 지도에서 확인해보세요.",
         "choose_restaurant": "음식점을 선택하세요",
         "representative_menu": "대표 메뉴",
         "rating": "별점",
@@ -68,8 +68,7 @@ TEXT = {
 
         "choose_food": "음식을 선택하세요",
 
-        "translation_intro":
-            "식당에서 자주 사용하는 표현을 인도네시아어, 한국어, 영어로 확인해보세요.",
+        "translation_intro": "식당에서 자주 사용하는 표현을 인도네시아어, 한국어, 영어로 확인해보세요.",
         "choose_phrase": "표현을 선택하세요",
 
         "visit_restaurant": "방문한 음식점",
@@ -83,17 +82,36 @@ TEXT = {
         "recent_reviews": "최근 후기",
         "no_reviews": "아직 등록된 후기가 없습니다.",
 
-        "recommend_intro":
-            "간단한 취향 선택을 통해 비슷한 분위기의 음식점을 추천합니다.",
-        "spicy_question": "매운 음식을 좋아하나요?",
-        "spicy_yes": "좋아해요",
-        "spicy_no": "별로 안 좋아해요",
-        "mood_question": "원하는 분위기는?",
+        "recommend_intro": "취향과 상황을 선택하면 조건에 가장 잘 맞는 로컬 맛집 TOP 3를 추천합니다.",
+        "spicy_question": "매운맛 선호",
+        "budget_question": "1인 예산",
+        "food_question": "먹고 싶은 음식 종류",
+        "mood_question": "원하는 분위기",
+        "purpose_question": "방문 목적",
+        "area_question": "원하는 지역",
+
+        "any": "상관없어요",
+        "spicy": "매운 음식 좋아해요",
+        "not_spicy": "맵지 않은 음식이 좋아요",
+
+        "budget_low": "저렴하게",
+        "budget_mid": "보통",
+        "budget_high": "가격 상관없음",
+
         "traditional": "전통적인 분위기",
         "local_favorite": "현지인 맛집",
+        "casual": "편안하고 캐주얼",
         "quiet": "조용한 분위기",
-        "recommend_btn": "맛집 추천받기",
-        "recommend_success": "취향에 맞는 맛집을 찾았습니다!",
+        "lively": "활기찬 분위기",
+
+        "solo": "혼밥",
+        "date": "데이트",
+        "friends": "친구와 함께",
+        "family": "가족 식사",
+
+        "recommend_btn": "TOP 3 추천받기",
+        "recommend_result": "나에게 맞는 로컬 맛집 TOP 3",
+        "recommend_reason": "추천 이유",
 
         "points": "내 포인트",
         "challenge": "오늘의 챌린지",
@@ -138,11 +156,11 @@ TEXT = {
         "expressions": "Translation Phrases",
         "popular": "Popular Local Restaurants",
 
-        "map_intro": "Discover hidden local restaurants in Jakarta on the map.",
+        "map_intro": "Explore various local restaurants in Jakarta on the map.",
         "choose_restaurant": "Choose a restaurant",
         "representative_menu": "Signature Menu",
         "rating": "Rating",
-        "region": "Region",
+        "region": "Area",
         "price": "Price Range",
         "mood": "Atmosphere",
 
@@ -151,8 +169,7 @@ TEXT = {
 
         "choose_food": "Choose a food",
 
-        "translation_intro":
-            "Check useful restaurant phrases in Indonesian, Korean, and English.",
+        "translation_intro": "Check useful restaurant phrases in Indonesian, Korean, and English.",
         "choose_phrase": "Choose a phrase",
 
         "visit_restaurant": "Restaurant visited",
@@ -166,17 +183,36 @@ TEXT = {
         "recent_reviews": "Recent Reviews",
         "no_reviews": "There are no reviews yet.",
 
-        "recommend_intro":
-            "Choose your preferences and find a restaurant that matches your taste.",
-        "spicy_question": "Do you like spicy food?",
-        "spicy_yes": "Yes",
-        "spicy_no": "Not really",
-        "mood_question": "What atmosphere do you prefer?",
-        "traditional": "Traditional atmosphere",
+        "recommend_intro": "Choose your preferences and get your TOP 3 local restaurant recommendations.",
+        "spicy_question": "Spice preference",
+        "budget_question": "Budget per person",
+        "food_question": "Food type",
+        "mood_question": "Atmosphere",
+        "purpose_question": "Occasion",
+        "area_question": "Preferred area",
+
+        "any": "No preference",
+        "spicy": "I like spicy food",
+        "not_spicy": "I prefer mild food",
+
+        "budget_low": "Budget-friendly",
+        "budget_mid": "Moderate",
+        "budget_high": "Any price",
+
+        "traditional": "Traditional",
         "local_favorite": "Local favorite",
-        "quiet": "Quiet atmosphere",
-        "recommend_btn": "Get Recommendation",
-        "recommend_success": "We found a restaurant for you!",
+        "casual": "Casual",
+        "quiet": "Quiet",
+        "lively": "Lively",
+
+        "solo": "Solo meal",
+        "date": "Date",
+        "friends": "With friends",
+        "family": "Family meal",
+
+        "recommend_btn": "Get TOP 3 Recommendations",
+        "recommend_result": "Your TOP 3 Local Restaurants",
+        "recommend_reason": "Why we recommend it",
 
         "points": "My Points",
         "challenge": "Today's Challenge",
@@ -221,7 +257,7 @@ TEXT = {
         "expressions": "Frasa Terjemahan",
         "popular": "Kuliner Lokal Populer",
 
-        "map_intro": "Temukan restoran lokal tersembunyi di Jakarta melalui peta.",
+        "map_intro": "Jelajahi berbagai restoran lokal di Jakarta melalui peta.",
         "choose_restaurant": "Pilih restoran",
         "representative_menu": "Menu Utama",
         "rating": "Rating",
@@ -234,8 +270,7 @@ TEXT = {
 
         "choose_food": "Pilih makanan",
 
-        "translation_intro":
-            "Lihat ungkapan yang sering digunakan di restoran dalam bahasa Indonesia, Korea, dan Inggris.",
+        "translation_intro": "Lihat ungkapan yang sering digunakan di restoran dalam bahasa Indonesia, Korea, dan Inggris.",
         "choose_phrase": "Pilih ungkapan",
 
         "visit_restaurant": "Restoran yang dikunjungi",
@@ -249,17 +284,36 @@ TEXT = {
         "recent_reviews": "Ulasan Terbaru",
         "no_reviews": "Belum ada ulasan.",
 
-        "recommend_intro":
-            "Pilih preferensi Anda untuk menemukan restoran yang sesuai dengan selera Anda.",
-        "spicy_question": "Apakah Anda suka makanan pedas?",
-        "spicy_yes": "Ya",
-        "spicy_no": "Tidak terlalu",
-        "mood_question": "Suasana seperti apa yang Anda inginkan?",
+        "recommend_intro": "Pilih preferensi Anda dan dapatkan TOP 3 rekomendasi restoran lokal.",
+        "spicy_question": "Preferensi rasa pedas",
+        "budget_question": "Anggaran per orang",
+        "food_question": "Jenis makanan",
+        "mood_question": "Suasana",
+        "purpose_question": "Tujuan kunjungan",
+        "area_question": "Daerah pilihan",
+
+        "any": "Tidak ada preferensi",
+        "spicy": "Saya suka makanan pedas",
+        "not_spicy": "Saya lebih suka makanan tidak pedas",
+
+        "budget_low": "Hemat",
+        "budget_mid": "Sedang",
+        "budget_high": "Harga bebas",
+
         "traditional": "Suasana tradisional",
         "local_favorite": "Favorit warga lokal",
-        "quiet": "Suasana tenang",
-        "recommend_btn": "Dapatkan Rekomendasi",
-        "recommend_success": "Kami menemukan restoran yang cocok untuk Anda!",
+        "casual": "Santai",
+        "quiet": "Tenang",
+        "lively": "Ramai",
+
+        "solo": "Makan sendiri",
+        "date": "Kencan",
+        "friends": "Bersama teman",
+        "family": "Makan bersama keluarga",
+
+        "recommend_btn": "Dapatkan TOP 3 Rekomendasi",
+        "recommend_result": "TOP 3 Restoran Lokal untuk Anda",
+        "recommend_reason": "Alasan rekomendasi",
 
         "points": "Poin Saya",
         "challenge": "Tantangan Hari Ini",
@@ -269,8 +323,7 @@ TEXT = {
         "stamp_tour": "Tur Stempel Kuliner Lokal",
         "stamp_caption": "Kunjungi semua 3 restoran untuk mendapatkan +500P",
 
-        "login_warning":
-            "Silakan pilih Pengunjung atau Pemilik di halaman Beranda terlebih dahulu.",
+        "login_warning": "Silakan pilih Pengunjung atau Pemilik di halaman Beranda terlebih dahulu.",
         "written_reviews": "Ulasan yang ditulis",
         "owner_manage": "Manajemen Pemilik",
         "registered_restaurant": "Restoran Terdaftar",
@@ -283,7 +336,7 @@ TEXT = {
 
 
 # =========================================================
-# 음식점 데이터
+# 맛집 데이터 - 시연용 12개
 # =========================================================
 restaurants = [
     {
@@ -292,12 +345,17 @@ restaurants = [
         "food": "Rendang",
         "food_ko": "렌당",
         "emoji": "🍛",
-        "region": "West Sumatra",
+        "area": "Central Jakarta",
         "rating": 4.9,
         "price": "Rp 30,000 ~ 60,000",
-        "mood_key": "traditional",
-        "lat": -6.2000,
-        "lon": 106.8166
+        "budget": "mid",
+        "category": "Meat",
+        "category_ko": "고기",
+        "spicy": True,
+        "mood": "traditional",
+        "purposes": ["family", "friends"],
+        "lat": -6.1865,
+        "lon": 106.8340
     },
     {
         "name": "Soto Betawi Haji",
@@ -305,10 +363,15 @@ restaurants = [
         "food": "Soto Betawi",
         "food_ko": "소토 베타위",
         "emoji": "🥣",
-        "region": "Jakarta",
+        "area": "Central Jakarta",
         "rating": 4.8,
         "price": "Rp 25,000 ~ 50,000",
-        "mood_key": "local_favorite",
+        "budget": "mid",
+        "category": "Soup",
+        "category_ko": "국물요리",
+        "spicy": False,
+        "mood": "local_favorite",
+        "purposes": ["solo", "friends"],
         "lat": -6.1754,
         "lon": 106.8272
     },
@@ -318,12 +381,179 @@ restaurants = [
         "food": "Gudeg",
         "food_ko": "구덱",
         "emoji": "🍲",
-        "region": "Yogyakarta",
+        "area": "South Jakarta",
         "rating": 4.7,
         "price": "Rp 20,000 ~ 45,000",
-        "mood_key": "quiet",
+        "budget": "low",
+        "category": "Traditional",
+        "category_ko": "전통음식",
+        "spicy": False,
+        "mood": "quiet",
+        "purposes": ["solo", "family"],
         "lat": -6.2297,
         "lon": 106.8295
+    },
+    {
+        "name": "Warung Padang Nusantara",
+        "name_ko": "와룽 파당 누산타라",
+        "food": "Nasi Padang",
+        "food_ko": "나시 파당",
+        "emoji": "🍚",
+        "area": "South Jakarta",
+        "rating": 4.7,
+        "price": "Rp 25,000 ~ 55,000",
+        "budget": "mid",
+        "category": "Rice",
+        "category_ko": "밥요리",
+        "spicy": True,
+        "mood": "local_favorite",
+        "purposes": ["solo", "friends"],
+        "lat": -6.2470,
+        "lon": 106.8170
+    },
+    {
+        "name": "Kampung Satay",
+        "name_ko": "캄풍 사테",
+        "food": "Sate Ayam",
+        "food_ko": "사테 아얌",
+        "emoji": "🍢",
+        "area": "Central Jakarta",
+        "rating": 4.6,
+        "price": "Rp 20,000 ~ 40,000",
+        "budget": "low",
+        "category": "Meat",
+        "category_ko": "고기",
+        "spicy": False,
+        "mood": "lively",
+        "purposes": ["friends", "family"],
+        "lat": -6.1910,
+        "lon": 106.8220
+    },
+    {
+        "name": "Bakso Kota",
+        "name_ko": "박소 코타",
+        "food": "Bakso",
+        "food_ko": "박소",
+        "emoji": "🥘",
+        "area": "West Jakarta",
+        "rating": 4.5,
+        "price": "Rp 15,000 ~ 35,000",
+        "budget": "low",
+        "category": "Soup",
+        "category_ko": "국물요리",
+        "spicy": False,
+        "mood": "casual",
+        "purposes": ["solo", "friends"],
+        "lat": -6.1680,
+        "lon": 106.7580
+    },
+    {
+        "name": "Gado Gado Garden",
+        "name_ko": "가도 가도 가든",
+        "food": "Gado-Gado",
+        "food_ko": "가도 가도",
+        "emoji": "🥗",
+        "area": "South Jakarta",
+        "rating": 4.6,
+        "price": "Rp 20,000 ~ 45,000",
+        "budget": "low",
+        "category": "Vegetable",
+        "category_ko": "채소요리",
+        "spicy": False,
+        "mood": "quiet",
+        "purposes": ["solo", "date"],
+        "lat": -6.2600,
+        "lon": 106.8100
+    },
+    {
+        "name": "Ayam Geprek Corner",
+        "name_ko": "아얌 게프렉 코너",
+        "food": "Ayam Geprek",
+        "food_ko": "아얌 게프렉",
+        "emoji": "🍗",
+        "area": "East Jakarta",
+        "rating": 4.5,
+        "price": "Rp 20,000 ~ 40,000",
+        "budget": "low",
+        "category": "Chicken",
+        "category_ko": "닭요리",
+        "spicy": True,
+        "mood": "casual",
+        "purposes": ["solo", "friends"],
+        "lat": -6.2250,
+        "lon": 106.9000
+    },
+    {
+        "name": "Martabak Malam",
+        "name_ko": "마르타박 말람",
+        "food": "Martabak",
+        "food_ko": "마르타박",
+        "emoji": "🥞",
+        "area": "West Jakarta",
+        "rating": 4.8,
+        "price": "Rp 30,000 ~ 70,000",
+        "budget": "mid",
+        "category": "Snack",
+        "category_ko": "간식",
+        "spicy": False,
+        "mood": "lively",
+        "purposes": ["date", "friends"],
+        "lat": -6.1800,
+        "lon": 106.7700
+    },
+    {
+        "name": "Pempek Palembang House",
+        "name_ko": "펨펙 팔렘방 하우스",
+        "food": "Pempek",
+        "food_ko": "펨펙",
+        "emoji": "🐟",
+        "area": "North Jakarta",
+        "rating": 4.6,
+        "price": "Rp 25,000 ~ 55,000",
+        "budget": "mid",
+        "category": "Seafood",
+        "category_ko": "해산물",
+        "spicy": False,
+        "mood": "casual",
+        "purposes": ["family", "friends"],
+        "lat": -6.1300,
+        "lon": 106.8500
+    },
+    {
+        "name": "Rawon Jawa",
+        "name_ko": "라원 자와",
+        "food": "Rawon",
+        "food_ko": "라원",
+        "emoji": "🍜",
+        "area": "East Jakarta",
+        "rating": 4.7,
+        "price": "Rp 30,000 ~ 60,000",
+        "budget": "mid",
+        "category": "Soup",
+        "category_ko": "국물요리",
+        "spicy": False,
+        "mood": "traditional",
+        "purposes": ["family", "solo"],
+        "lat": -6.2100,
+        "lon": 106.8900
+    },
+    {
+        "name": "Nasi Goreng Senja",
+        "name_ko": "나시 고렝 센자",
+        "food": "Nasi Goreng",
+        "food_ko": "나시 고렝",
+        "emoji": "🍳",
+        "area": "Central Jakarta",
+        "rating": 4.8,
+        "price": "Rp 20,000 ~ 50,000",
+        "budget": "low",
+        "category": "Rice",
+        "category_ko": "밥요리",
+        "spicy": True,
+        "mood": "lively",
+        "purposes": ["date", "friends"],
+        "lat": -6.2000,
+        "lon": 106.8200
     }
 ]
 
@@ -343,6 +573,12 @@ def display_food_name(r):
     return r["food"]
 
 
+def display_category(r):
+    if st.session_state.language == "한국어":
+        return r["category_ko"]
+    return r["category"]
+
+
 # =========================================================
 # 사이드바
 # =========================================================
@@ -358,9 +594,7 @@ language_list = [
 language = st.sidebar.selectbox(
     "🌐 Language",
     language_list,
-    index=language_list.index(
-        st.session_state.language
-    )
+    index=language_list.index(st.session_state.language)
 )
 
 if language != st.session_state.language:
@@ -386,14 +620,10 @@ menu = st.sidebar.radio(
 st.sidebar.divider()
 
 if st.session_state.user_type == "guest":
-    st.sidebar.success(
-        f"🧳 {t['guest_mode']}"
-    )
+    st.sidebar.success(f"🧳 {t['guest_mode']}")
 
 elif st.session_state.user_type == "owner":
-    st.sidebar.success(
-        f"🏪 {t['owner_mode']}"
-    )
+    st.sidebar.success(f"🏪 {t['owner_mode']}")
 
 
 # =========================================================
@@ -412,12 +642,8 @@ if menu == f"🏠 {t['home']}":
         col1, col2 = st.columns(2)
 
         with col1:
-            st.subheader(
-                f"🧳 {t['customer']}"
-            )
-            st.write(
-                t["customer_desc"]
-            )
+            st.subheader(f"🧳 {t['customer']}")
+            st.write(t["customer_desc"])
 
             if st.button(
                 t["start_customer"],
@@ -427,12 +653,8 @@ if menu == f"🏠 {t['home']}":
                 st.rerun()
 
         with col2:
-            st.subheader(
-                f"🏪 {t['owner']}"
-            )
-            st.write(
-                t["owner_desc"]
-            )
+            st.subheader(f"🏪 {t['owner']}")
+            st.write(t["owner_desc"])
 
             if st.button(
                 t["start_owner"],
@@ -448,13 +670,13 @@ if menu == f"🏠 {t['home']}":
         with c1:
             st.metric(
                 t["restaurants"],
-                "128"
+                len(restaurants)
             )
 
         with c2:
             st.metric(
                 t["foods"],
-                "42"
+                len(set(r["food"] for r in restaurants))
             )
 
         with c3:
@@ -465,38 +687,39 @@ if menu == f"🏠 {t['home']}":
 
         st.divider()
 
-        st.header(
-            f"🔥 {t['popular']}"
-        )
+        st.header(f"🔥 {t['popular']}")
 
         ranking = sorted(
             restaurants,
             key=lambda x: x["rating"],
             reverse=True
-        )
-
-        cols = st.columns(3)
+        )[:5]
 
         for i, r in enumerate(ranking):
 
-            with cols[i]:
+            col1, col2, col3 = st.columns(
+                [0.7, 3, 1]
+            )
+
+            with col1:
                 st.subheader(
                     f"{r['emoji']} #{i + 1}"
                 )
+
+            with col2:
                 st.write(
                     f"**{display_restaurant_name(r)}**"
                 )
-                st.write(
-                    f"🍽 {display_food_name(r)}"
+                st.caption(
+                    f"🍽 {display_food_name(r)} · "
+                    f"📍 {r['area']} · "
+                    f"✨ {t[r['mood']]}"
                 )
-                st.write(
-                    f"⭐ {r['rating']}"
-                )
-                st.write(
-                    f"📍 {r['region']}"
-                )
-                st.write(
-                    f"✨ {t[r['mood_key']]}"
+
+            with col3:
+                st.metric(
+                    t["rating"],
+                    r["rating"]
                 )
 
         if (
@@ -514,22 +737,21 @@ if menu == f"🏠 {t['home']}":
 # =========================================================
 elif menu == f"📍 {t['map']}":
 
-    st.title(
-        f"📍 {t['map']}"
-    )
+    st.title(f"📍 {t['map']}")
+    st.write(t["map_intro"])
 
-    st.write(
-        t["map_intro"]
-    )
-
-    df = pd.DataFrame(
-        restaurants
-    )
+    df = pd.DataFrame(restaurants)
 
     st.map(
         df,
         latitude="lat",
         longitude="lon"
+    )
+
+    st.caption(
+        "※ 현재 표시된 음식점 정보는 시연용 프로토타입 데이터입니다."
+        if st.session_state.language == "한국어"
+        else "※ Restaurant data shown here is for prototype demonstration."
     )
 
     st.divider()
@@ -549,8 +771,7 @@ elif menu == f"📍 {t['map']}":
     ]
 
     selected = next(
-        r
-        for r in restaurants
+        r for r in restaurants
         if r["name"] == restaurant_name
     )
 
@@ -559,11 +780,12 @@ elif menu == f"📍 {t['map']}":
     )
 
     with col1:
-        st.title(
-            selected["emoji"]
-        )
+        st.title(selected["emoji"])
         st.subheader(
             display_food_name(selected)
+        )
+        st.write(
+            f"🏷 {display_category(selected)}"
         )
 
     with col2:
@@ -581,7 +803,7 @@ elif menu == f"📍 {t['map']}":
         )
         st.write(
             f"📍 **{t['region']}:** "
-            f"{selected['region']}"
+            f"{selected['area']}"
         )
         st.write(
             f"💰 **{t['price']}:** "
@@ -589,7 +811,7 @@ elif menu == f"📍 {t['map']}":
         )
         st.write(
             f"✨ **{t['mood']}:** "
-            f"{t[selected['mood_key']]}"
+            f"{t[selected['mood']]}"
         )
 
         st.success(
@@ -609,160 +831,137 @@ elif menu == f"🍛 {t['culture']}":
         f"🍛 {t['culture']}"
     )
 
-    food_options = {
-        "한국어": {
-            "렌당 (Rendang)": "rendang",
-            "소토 베타위 (Soto Betawi)": "soto",
-            "구덱 (Gudeg)": "gudeg"
-        },
-
-        "English": {
-            "Rendang": "rendang",
-            "Soto Betawi": "soto",
-            "Gudeg": "gudeg"
-        },
-
-        "Bahasa Indonesia": {
-            "Rendang": "rendang",
-            "Soto Betawi": "soto",
-            "Gudeg": "gudeg"
-        }
-    }
-
-    options = food_options[
-        st.session_state.language
+    cultural_foods = [
+        restaurants[0],
+        restaurants[1],
+        restaurants[2],
+        restaurants[4],
+        restaurants[9],
+        restaurants[10]
     ]
+
+    options = {
+        display_food_name(r): r
+        for r in cultural_foods
+    }
 
     food_display = st.selectbox(
         t["choose_food"],
         list(options.keys())
     )
 
-    food = options[
+    selected = options[
         food_display
     ]
 
-    if food == "rendang":
+    st.title(
+        selected["emoji"]
+    )
 
-        st.title("🍛")
+    st.header(
+        display_food_name(selected)
+    )
 
-        if st.session_state.language == "한국어":
-            st.header("렌당 (Rendang)")
-        else:
-            st.header("Rendang")
+    st.write(
+        f"📍 {selected['area']}"
+    )
 
-        st.write("📍 West Sumatra")
+    food_key = selected["food"]
 
-        if st.session_state.language == "한국어":
-            st.write(
-                "렌당은 고기와 코코넛 밀크, 향신료를 오랜 시간 조리해 만드는 "
-                "서수마트라 미낭카바우 지역의 대표적인 전통 음식입니다."
-            )
-            st.info(
-                "가족 행사나 공동체 모임에서 함께 나누어 먹는 음식으로, "
-                "지역의 전통과 공동체 문화를 보여주는 음식입니다."
-            )
+    if st.session_state.language == "한국어":
 
-        elif st.session_state.language == "English":
-            st.write(
-                "Rendang is a traditional Minangkabau dish from West Sumatra. "
-                "It is made by slowly cooking meat with coconut milk and spices."
-            )
-            st.info(
-                "It is often served during family gatherings and community events "
-                "and reflects Minangkabau culture."
-            )
+        descriptions = {
+            "Rendang":
+                "렌당은 고기와 코코넛 밀크, 향신료를 오랜 시간 조리하는 "
+                "미낭카바우 지역의 대표적인 전통 음식입니다.",
 
-        else:
-            st.write(
-                "Rendang adalah makanan tradisional Minangkabau dari Sumatra Barat. "
-                "Rendang dibuat dengan memasak daging, santan, dan rempah-rempah "
-                "secara perlahan."
-            )
-            st.info(
-                "Rendang sering disajikan dalam acara keluarga dan kegiatan masyarakat "
-                "serta mencerminkan budaya Minangkabau."
-            )
+            "Soto Betawi":
+                "소토 베타위는 자카르타의 베타위 문화를 대표하는 "
+                "진한 국물 요리입니다.",
 
-    elif food == "soto":
+            "Gudeg":
+                "구덱은 어린 잭프루트를 코코넛 밀크와 향신료로 "
+                "천천히 조리하는 족자카르타의 전통 음식입니다.",
 
-        st.title("🥣")
+            "Sate Ayam":
+                "사테 아얌은 닭고기를 꼬치에 끼워 구운 뒤 "
+                "땅콩 소스 등과 함께 먹는 인도네시아의 대표적인 음식입니다.",
 
-        if st.session_state.language == "한국어":
-            st.header("소토 베타위 (Soto Betawi)")
-        else:
-            st.header("Soto Betawi")
+            "Pempek":
+                "펨펙은 팔렘방 지역에서 유래한 생선 반죽 음식으로 "
+                "새콤달콤한 소스와 함께 먹는 것이 특징입니다.",
 
-        st.write("📍 Jakarta")
+            "Rawon":
+                "라원은 진한 색의 국물과 향신료가 특징인 "
+                "자바 지역의 전통 소고기 수프입니다."
+        }
 
-        if st.session_state.language == "한국어":
-            st.write(
-                "소토 베타위는 자카르타의 베타위 문화를 대표하는 전통 국물 음식입니다. "
-                "고기와 향신료를 넣은 진한 국물이 특징입니다."
-            )
-            st.info(
-                "자카르타 지역의 전통적인 식문화를 경험할 수 있는 대표적인 음식입니다."
-            )
+    elif st.session_state.language == "English":
 
-        elif st.session_state.language == "English":
-            st.write(
-                "Soto Betawi is a traditional soup associated with the Betawi culture "
-                "of Jakarta. It is known for its rich broth, meat, and spices."
-            )
-            st.info(
-                "It is one of Jakarta's representative local dishes."
-            )
+        descriptions = {
+            "Rendang":
+                "Rendang is a traditional Minangkabau dish made by slowly cooking "
+                "meat with coconut milk and spices.",
 
-        else:
-            st.write(
-                "Soto Betawi adalah makanan berkuah tradisional yang berasal dari "
-                "budaya Betawi di Jakarta. Makanan ini dikenal dengan kuah yang gurih, "
-                "daging, dan rempah-rempah."
-            )
-            st.info(
-                "Soto Betawi merupakan salah satu makanan khas yang mencerminkan "
-                "budaya kuliner Jakarta."
-            )
+            "Soto Betawi":
+                "Soto Betawi is a rich traditional soup associated with "
+                "Jakarta's Betawi culture.",
+
+            "Gudeg":
+                "Gudeg is a traditional Yogyakarta dish made with young jackfruit, "
+                "coconut milk, and spices.",
+
+            "Sate Ayam":
+                "Sate Ayam is grilled chicken satay commonly served with "
+                "peanut sauce and other seasonings.",
+
+            "Pempek":
+                "Pempek is a traditional fish cake from Palembang, "
+                "usually served with a tangy sweet-and-sour sauce.",
+
+            "Rawon":
+                "Rawon is a traditional Javanese beef soup known for "
+                "its dark broth and aromatic spices."
+        }
 
     else:
 
-        st.title("🍲")
+        descriptions = {
+            "Rendang":
+                "Rendang adalah makanan tradisional Minangkabau yang dimasak "
+                "perlahan dengan daging, santan, dan rempah-rempah.",
 
-        if st.session_state.language == "한국어":
-            st.header("구덱 (Gudeg)")
-        else:
-            st.header("Gudeg")
+            "Soto Betawi":
+                "Soto Betawi adalah makanan berkuah khas budaya Betawi Jakarta "
+                "dengan rasa yang kaya dan gurih.",
 
-        st.write("📍 Yogyakarta")
+            "Gudeg":
+                "Gudeg adalah makanan tradisional Yogyakarta yang dibuat "
+                "dari nangka muda, santan, dan rempah-rempah.",
 
-        if st.session_state.language == "한국어":
-            st.write(
-                "구덱은 어린 잭프루트를 코코넛 밀크와 향신료로 천천히 조리한 "
-                "족자카르타의 대표적인 전통 음식입니다."
-            )
-            st.info(
-                "달콤한 맛이 특징이며 족자카르타의 대표적인 지역 음식으로 알려져 있습니다."
-            )
+            "Sate Ayam":
+                "Sate Ayam adalah sate ayam panggang yang biasanya disajikan "
+                "dengan saus kacang.",
 
-        elif st.session_state.language == "English":
-            st.write(
-                "Gudeg is a traditional dish from Yogyakarta made by slowly cooking "
-                "young jackfruit with coconut milk and spices."
-            )
-            st.info(
-                "It is known for its slightly sweet flavor and is one of Yogyakarta's "
-                "most iconic local dishes."
-            )
+            "Pempek":
+                "Pempek adalah makanan khas Palembang berbahan dasar ikan "
+                "yang biasa disajikan dengan kuah cuko.",
 
-        else:
-            st.write(
-                "Gudeg adalah makanan tradisional khas Yogyakarta yang dibuat dari "
-                "nangka muda yang dimasak perlahan dengan santan dan rempah-rempah."
-            )
-            st.info(
-                "Gudeg memiliki rasa yang cenderung manis dan dikenal sebagai salah satu "
-                "makanan khas Yogyakarta."
-            )
+            "Rawon":
+                "Rawon adalah sup daging sapi khas Jawa dengan kuah gelap "
+                "dan aroma rempah yang khas."
+        }
+
+    st.write(
+        descriptions.get(
+            food_key,
+            ""
+        )
+    )
+
+    st.info(
+        t["culture_experience"]
+    )
 
 
 # =========================================================
@@ -785,7 +984,9 @@ elif menu == f"💬 {t['language']}":
             "감사합니다": "thanks",
             "정말 맛있어요": "delicious",
             "맵지 않게 해주세요": "not_spicy",
-            "추천 메뉴가 무엇인가요?": "recommend"
+            "추천 메뉴가 무엇인가요?": "recommend",
+            "계산해주세요": "bill",
+            "물 한 병 주세요": "water"
         },
 
         "English": {
@@ -794,7 +995,9 @@ elif menu == f"💬 {t['language']}":
             "Thank you.": "thanks",
             "It's really delicious.": "delicious",
             "Please make it not spicy.": "not_spicy",
-            "What do you recommend?": "recommend"
+            "What do you recommend?": "recommend",
+            "The bill, please.": "bill",
+            "One bottle of water, please.": "water"
         },
 
         "Bahasa Indonesia": {
@@ -803,7 +1006,9 @@ elif menu == f"💬 {t['language']}":
             "Terima kasih.": "thanks",
             "Sangat enak.": "delicious",
             "Tolong jangan terlalu pedas.": "not_spicy",
-            "Menu apa yang Anda rekomendasikan?": "recommend"
+            "Menu apa yang Anda rekomendasikan?": "recommend",
+            "Minta bon, ya.": "bill",
+            "Tolong satu botol air.": "water"
         }
     }
 
@@ -813,35 +1018,40 @@ elif menu == f"💬 {t['language']}":
             "Korean": "안녕하세요",
             "English": "Hello"
         },
-
         "one": {
             "Indonesia": "Saya mau satu ini.",
             "Korean": "이거 하나 주세요",
             "English": "One of these, please."
         },
-
         "thanks": {
             "Indonesia": "Terima kasih.",
             "Korean": "감사합니다",
             "English": "Thank you."
         },
-
         "delicious": {
             "Indonesia": "Sangat enak.",
             "Korean": "정말 맛있어요",
             "English": "It's really delicious."
         },
-
         "not_spicy": {
             "Indonesia": "Tolong jangan terlalu pedas.",
             "Korean": "맵지 않게 해주세요",
             "English": "Please make it not spicy."
         },
-
         "recommend": {
             "Indonesia": "Menu apa yang Anda rekomendasikan?",
             "Korean": "추천 메뉴가 무엇인가요?",
             "English": "What do you recommend?"
+        },
+        "bill": {
+            "Indonesia": "Minta bon, ya.",
+            "Korean": "계산해주세요",
+            "English": "The bill, please."
+        },
+        "water": {
+            "Indonesia": "Tolong satu botol air.",
+            "Korean": "물 한 병 주세요",
+            "English": "One bottle of water, please."
         }
     }
 
@@ -958,19 +1168,20 @@ elif menu == f"⭐ {t['review']}":
     )
 
     if not st.session_state.reviews:
+
         st.info(
             t["no_reviews"]
         )
 
     else:
+
         for item in reversed(
             st.session_state.reviews
         ):
 
             matched_restaurant = next(
                 (
-                    r
-                    for r in restaurants
+                    r for r in restaurants
                     if r["name"] == item["restaurant"]
                 ),
                 None
@@ -1021,7 +1232,7 @@ elif menu == f"⭐ {t['review']}":
 
 
 # =========================================================
-# 맞춤 추천
+# 맞춤 추천 - 업그레이드
 # =========================================================
 elif menu == f"✨ {t['recommend']}":
 
@@ -1033,64 +1244,268 @@ elif menu == f"✨ {t['recommend']}":
         t["recommend_intro"]
     )
 
-    spicy = st.radio(
+    st.divider()
+
+    # 1. 매운맛
+    spicy_choice = st.selectbox(
         f"🌶 {t['spicy_question']}",
         [
-            t["spicy_yes"],
-            t["spicy_no"]
+            t["any"],
+            t["spicy"],
+            t["not_spicy"]
         ]
     )
 
-    mood = st.selectbox(
-        t["mood_question"],
+    # 2. 예산
+    budget_choice = st.selectbox(
+        f"💰 {t['budget_question']}",
         [
-            t["traditional"],
-            t["local_favorite"],
-            t["quiet"]
+            t["any"],
+            t["budget_low"],
+            t["budget_mid"],
+            t["budget_high"]
         ]
     )
+
+    # 3. 음식 종류
+    category_map = {
+        t["any"]: None,
+        "🍖 고기 / Meat": "Meat",
+        "🥣 국물요리 / Soup": "Soup",
+        "🍚 밥요리 / Rice": "Rice",
+        "🍗 닭요리 / Chicken": "Chicken",
+        "🥗 채소요리 / Vegetable": "Vegetable",
+        "🐟 해산물 / Seafood": "Seafood",
+        "🥞 간식 / Snack": "Snack",
+        "🍲 전통음식 / Traditional": "Traditional"
+    }
+
+    category_choice_display = st.selectbox(
+        f"🍽 {t['food_question']}",
+        list(category_map.keys())
+    )
+
+    category_choice = category_map[
+        category_choice_display
+    ]
+
+    # 4. 분위기
+    mood_map = {
+        t["any"]: None,
+        t["traditional"]: "traditional",
+        t["local_favorite"]: "local_favorite",
+        t["casual"]: "casual",
+        t["quiet"]: "quiet",
+        t["lively"]: "lively"
+    }
+
+    mood_display = st.selectbox(
+        f"✨ {t['mood_question']}",
+        list(mood_map.keys())
+    )
+
+    mood_choice = mood_map[
+        mood_display
+    ]
+
+    # 5. 방문 목적
+    purpose_map = {
+        t["any"]: None,
+        t["solo"]: "solo",
+        t["date"]: "date",
+        t["friends"]: "friends",
+        t["family"]: "family"
+    }
+
+    purpose_display = st.selectbox(
+        f"👥 {t['purpose_question']}",
+        list(purpose_map.keys())
+    )
+
+    purpose_choice = purpose_map[
+        purpose_display
+    ]
+
+    # 6. 지역
+    area_list = sorted(
+        set(r["area"] for r in restaurants)
+    )
+
+    area_choice = st.selectbox(
+        f"📍 {t['area_question']}",
+        [t["any"]] + area_list
+    )
+
+    st.divider()
 
     if st.button(
         t["recommend_btn"],
         use_container_width=True
     ):
 
-        if spicy == t["spicy_yes"]:
-            r = restaurants[0]
+        results = []
 
-        elif mood == t["local_favorite"]:
-            r = restaurants[1]
+        for r in restaurants:
 
-        else:
-            r = restaurants[2]
+            score = 0
+            reasons = []
+
+            # 매운맛
+            if spicy_choice == t["spicy"]:
+
+                if r["spicy"]:
+                    score += 2
+                    reasons.append(
+                        "🌶 매운맛 선호 일치"
+                        if st.session_state.language == "한국어"
+                        else "🌶 Spice preference match"
+                    )
+
+            elif spicy_choice == t["not_spicy"]:
+
+                if not r["spicy"]:
+                    score += 2
+                    reasons.append(
+                        "🌿 맵지 않은 음식 선호 일치"
+                        if st.session_state.language == "한국어"
+                        else "🌿 Mild food preference match"
+                    )
+
+            # 예산
+            if budget_choice == t["budget_low"]:
+
+                if r["budget"] == "low":
+                    score += 2
+                    reasons.append(
+                        "💰 저렴한 가격대"
+                        if st.session_state.language == "한국어"
+                        else "💰 Budget-friendly"
+                    )
+
+            elif budget_choice == t["budget_mid"]:
+
+                if r["budget"] in ["low", "mid"]:
+                    score += 2
+                    reasons.append(
+                        "💰 예산 범위 일치"
+                        if st.session_state.language == "한국어"
+                        else "💰 Budget match"
+                    )
+
+            # 음식 종류
+            if category_choice is not None:
+
+                if r["category"] == category_choice:
+                    score += 3
+                    reasons.append(
+                        f"🍽 {display_category(r)}"
+                    )
+
+            # 분위기
+            if mood_choice is not None:
+
+                if r["mood"] == mood_choice:
+                    score += 2
+                    reasons.append(
+                        f"✨ {t[r['mood']]}"
+                    )
+
+            # 목적
+            if purpose_choice is not None:
+
+                if purpose_choice in r["purposes"]:
+                    score += 2
+                    reasons.append(
+                        f"👥 {purpose_display}"
+                    )
+
+            # 지역
+            if area_choice != t["any"]:
+
+                if r["area"] == area_choice:
+                    score += 3
+                    reasons.append(
+                        f"📍 {area_choice}"
+                    )
+
+            # 기본적으로 별점도 반영
+            score += r["rating"] / 10
+
+            results.append({
+                "restaurant": r,
+                "score": score,
+                "reasons": reasons
+            })
+
+        results = sorted(
+            results,
+            key=lambda x: x["score"],
+            reverse=True
+        )[:3]
 
         st.success(
-            f"✨ {t['recommend_success']}"
+            f"🎉 {t['recommend_result']}"
         )
 
-        st.title(
-            r["emoji"]
-        )
+        for rank, result in enumerate(
+            results,
+            start=1
+        ):
 
-        st.header(
-            display_restaurant_name(r)
-        )
+            r = result["restaurant"]
 
-        st.write(
-            f"🍽 {display_food_name(r)}"
-        )
+            st.subheader(
+                f"{rank}위 · {r['emoji']} "
+                f"{display_restaurant_name(r)}"
+            )
 
-        st.write(
-            f"⭐ {r['rating']}"
-        )
+            col1, col2, col3 = st.columns(3)
 
-        st.write(
-            f"📍 {r['region']}"
-        )
+            with col1:
+                st.write(
+                    f"🍽 **{display_food_name(r)}**"
+                )
+                st.write(
+                    f"🏷 {display_category(r)}"
+                )
 
-        st.write(
-            f"✨ {t[r['mood_key']]}"
-        )
+            with col2:
+                st.write(
+                    f"⭐ {r['rating']}"
+                )
+                st.write(
+                    f"📍 {r['area']}"
+                )
+
+            with col3:
+                st.write(
+                    f"💰 {r['price']}"
+                )
+                st.write(
+                    f"✨ {t[r['mood']]}"
+                )
+
+            if result["reasons"]:
+
+                st.info(
+                    f"💡 {t['recommend_reason']}: "
+                    + " · ".join(
+                        result["reasons"]
+                    )
+                )
+
+            else:
+
+                st.info(
+                    f"💡 {t['recommend_reason']}: "
+                    + (
+                        "높은 이용자 평점"
+                        if st.session_state.language == "한국어"
+                        else "High user rating"
+                    )
+                )
+
+            st.divider()
 
 
 # =========================================================
@@ -1179,11 +1594,13 @@ elif menu == f"👤 {t['mypage']}":
     else:
 
         if st.session_state.user_type == "guest":
+
             st.subheader(
                 f"🧳 {t['customer']}"
             )
 
         else:
+
             st.subheader(
                 f"🏪 {t['owner']}"
             )
@@ -1212,6 +1629,7 @@ elif menu == f"👤 {t['mypage']}":
             )
 
             if st.session_state.reviews:
+
                 st.warning(
                     f"🔔 {t['new_review']}"
                 )
@@ -1221,6 +1639,7 @@ elif menu == f"👤 {t['mypage']}":
         if st.button(
             t["reset_account"]
         ):
+
             st.session_state.user_type = None
             st.rerun()
             
