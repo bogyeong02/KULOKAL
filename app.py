@@ -1642,4 +1642,3 @@ elif menu == f"👤 {t['mypage']}":
 
             st.session_state.user_type = None
             st.rerun()
-            
