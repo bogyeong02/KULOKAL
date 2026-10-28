@@ -4094,6 +4094,25 @@ for key, value in DEFAULTS.items():
     if key not in st.session_state:
         st.session_state[key] = value
 
+# Normalize language labels from earlier versions of the demo.
+# Existing Streamlit sessions can retain localized labels such as "영어".
+LANGUAGE_ALIASES = {
+    "한국어": "한국어", "Korean": "한국어", "ko": "한국어",
+    "영어": "English", "영문": "English", "English": "English", "en": "English",
+    "인도네시아어": "Bahasa Indonesia", "인도네시아 어": "Bahasa Indonesia",
+    "인도네시아어권": "Bahasa Indonesia", "Indonesian": "Bahasa Indonesia",
+    "Indonesia": "Bahasa Indonesia", "Bahasa Indonesia": "Bahasa Indonesia", "id": "Bahasa Indonesia",
+}
+
+def normalize_language(value):
+    if not isinstance(value, str):
+        return "한국어"
+    return LANGUAGE_ALIASES.get(value.strip(), "한국어")
+
+st.session_state.language = normalize_language(st.session_state.language)
+if "language_picker" in st.session_state:
+    st.session_state.language_picker = normalize_language(st.session_state.language_picker)
+
 t = T[st.session_state.language]
 lang = st.session_state.language
 
@@ -4413,7 +4432,7 @@ LANGUAGE_OPTION_LABELS = {
 }
 
 def switch_language():
-    st.session_state.language = st.session_state.language_picker
+    st.session_state.language = normalize_language(st.session_state.language_picker)
 
 if "language_picker" not in st.session_state:
     st.session_state.language_picker = st.session_state.language
