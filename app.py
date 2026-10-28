@@ -9,6 +9,22 @@ st.set_page_config(page_title="KULOKAL", page_icon="🍜", layout="wide")
 # ---------------------------------------------------------
 T = {
     "한국어": {
+        "edit_review": '✏️ 내 후기 수정',
+        "delete_review": '🗑️ 내 후기 삭제',
+        "save_review": '수정 내용 저장',
+        "cancel_edit": '수정 취소',
+        "confirm_delete": '이 후기를 정말 삭제할까요? 삭제하면 복구할 수 없습니다.',
+        "confirm_delete_btn": '삭제 확정',
+        "cancel_delete": '삭제 취소',
+        "review_updated": '후기가 수정되었어요!',
+        "review_deleted": '후기가 삭제되었어요.',
+        "review_actions_note": '현재 시연 세션에서 작성한 후기는 수정하거나 삭제할 수 있어요.',
+        "keep_photo": '기존 사진 유지',
+        "replace_photo": '새 사진으로 변경 (선택)',
+        "remove_photo": '기존 사진 삭제',
+        "review_edit_heading": '내 후기 수정',
+        "review_points_notice": '후기 삭제 시 지급된 50P도 회수됩니다.',
+
         "menu": "메뉴", "home": "홈", "map": "로컬 맛집 지도",
         "culture": "음식 · 문화", "language": "언어 번역",
         "review": "리뷰 · 커뮤니티", "recommend": "맞춤 추천",
@@ -126,6 +142,22 @@ T = {
         'recommend_all': '취향에 맞는 음식점을 찾아보세요.',
     },
     "English": {
+        "edit_review": '✏️ Edit my review',
+        "delete_review": '🗑️ Delete my review',
+        "save_review": 'Save changes',
+        "cancel_edit": 'Cancel editing',
+        "confirm_delete": 'Delete this review permanently? This cannot be undone.',
+        "confirm_delete_btn": 'Yes, delete',
+        "cancel_delete": 'Cancel deletion',
+        "review_updated": 'Review updated!',
+        "review_deleted": 'Review deleted.',
+        "review_actions_note": 'You can edit or delete reviews written during this demo session.',
+        "keep_photo": 'Keep current photo',
+        "replace_photo": 'Replace photo (optional)',
+        "remove_photo": 'Remove current photo',
+        "review_edit_heading": 'Edit my review',
+        "review_points_notice": 'Deleting a review also removes the 50 points awarded for it.',
+
         "menu": "Menu", "home": "Home", "map": "Local Restaurant Map",
         "culture": "Food & Culture", "language": "Language Guide",
         "review": "Reviews & Community", "recommend": "Recommendations",
@@ -243,6 +275,22 @@ T = {
         'recommend_all': 'Find restaurants that fit your preferences.',
     },
     "Bahasa Indonesia": {
+        "edit_review": '✏️ Edit ulasan saya',
+        "delete_review": '🗑️ Hapus ulasan saya',
+        "save_review": 'Simpan perubahan',
+        "cancel_edit": 'Batal edit',
+        "confirm_delete": 'Hapus ulasan ini secara permanen? Tindakan ini tidak dapat dibatalkan.',
+        "confirm_delete_btn": 'Ya, hapus',
+        "cancel_delete": 'Batal hapus',
+        "review_updated": 'Ulasan berhasil diperbarui!',
+        "review_deleted": 'Ulasan berhasil dihapus.',
+        "review_actions_note": 'Ulasan yang ditulis selama sesi demo ini dapat diedit atau dihapus.',
+        "keep_photo": 'Pertahankan foto',
+        "replace_photo": 'Ganti foto (opsional)',
+        "remove_photo": 'Hapus foto saat ini',
+        "review_edit_heading": 'Edit ulasan saya',
+        "review_points_notice": 'Menghapus ulasan juga mengurangi 50 poin yang diberikan.',
+
         "menu": "Menu", "home": "Beranda", "map": "Peta Kuliner Lokal",
         "culture": "Makanan & Budaya", "language": "Panduan Bahasa",
         "review": "Ulasan & Komunitas", "recommend": "Rekomendasi",
@@ -3576,6 +3624,99 @@ RESEARCHED_RESTAURANTS = [{'name': 'Mie Razali',
   'hours': None,
   'data_source': 'local_research'}]
 
+# 한국어 화면에서 지역별 음식 종류를 이해할 수 있도록 한글 설명을 병기합니다.
+# 조사 자료에는 실제 대표 메뉴가 아니라 '지역 요리 종류'가 기재된 경우가 있습니다.
+# 음식점의 실제 메뉴명으로 오해하지 않도록 원문과 함께 표시합니다.
+RESEARCH_CUISINE_KO = {
+    'Dessert Ambon': '암본 지역 디저트',
+    'Dessert Minahasa': '미나하사 지역 디저트',
+    'Kopi Papua': '파푸아 커피',
+    'Kopitiam Belitung': '벨리퉁식 전통 커피숍',
+    'Kopitiam Tradisional': '전통 커피숍 음식',
+    'Masakan Aceh': '아체 지역 요리',
+    'Masakan Ambon': '암본 지역 요리',
+    'Masakan Anim Ha': '아님 하 지역 요리',
+    'Masakan Arfak': '아르팍 지역 요리',
+    'Masakan Bali': '발리 지역 요리',
+    'Masakan Bangka': '방카 지역 요리',
+    'Masakan Banjar': '반자르 지역 요리',
+    'Masakan Banjar / Kalteng': '반자르·중부 칼리만탄 요리',
+    'Masakan Banten': '반텐 지역 요리',
+    'Masakan Belitung': '벨리퉁 지역 요리',
+    'Masakan Bengkulu': '벵쿨루 지역 요리',
+    'Masakan Betawi': '베타위 지역 요리',
+    'Masakan Buton': '부톤 지역 요리',
+    'Masakan Cirebon': '치르본 지역 요리',
+    'Masakan Dayak': '다약 지역 요리',
+    'Masakan Dayak Ngaju': '다약 응아주 지역 요리',
+    'Masakan Ekstrim Papua': '파푸아 지역의 이색 요리',
+    'Masakan Gorontalo': '고론탈로 지역 요리',
+    'Masakan Hakka': '하카(객가) 요리',
+    'Masakan Jambi': '잠비 지역 요리',
+    'Masakan Jawa (Jogja)': '족자카르타식 자바 요리',
+    'Masakan Jawa Tengah': '중부 자바 요리',
+    'Masakan Jawa Timur': '동부 자바 요리',
+    'Masakan Kaili': '카일리 지역 요리',
+    'Masakan Kapau': '카파우 지역 요리',
+    'Masakan Kupang': '쿠팡 지역 요리',
+    'Masakan Kutai': '쿠타이 지역 요리',
+    'Masakan La Pago': '라 파고 지역 요리',
+    'Masakan Lampung': '람풍 지역 요리',
+    'Masakan Lampung / Palembang': '람풍·팔렘방 지역 요리',
+    'Masakan Lembah Baliem': '발리엠 계곡 지역 요리',
+    'Masakan Madura': '마두라 지역 요리',
+    'Masakan Makassar': '마카사르 지역 요리',
+    'Masakan Mandailing': '만다일링 지역 요리',
+    'Masakan Mandar': '만다르 지역 요리',
+    'Masakan Mandar (Bau Peapi)': '만다르식 바우 페아피 요리',
+    'Masakan Manggarai': '망가라이 지역 요리',
+    'Masakan Medan': '메단 지역 요리',
+    'Masakan Mee Pago': '미 파고 지역 요리',
+    'Masakan Melayu': '말레이 지역 요리',
+    'Masakan Melayu / Peranakan': '말레이·페라나칸 요리',
+    'Masakan Melayu Jambi': '잠비식 말레이 요리',
+    'Masakan Melayu Kepri': '리아우 제도식 말레이 요리',
+    'Masakan Melayu Pontianak': '폰티아낙식 말레이 요리',
+    'Masakan Melayu Riau': '리아우식 말레이 요리',
+    'Masakan Merauke': '메라우케 지역 요리',
+    'Masakan Minahasa': '미나하사 지역 요리',
+    'Masakan Minahasa (Tinoransak)': '미나하사식 티노란삭 요리',
+    'Masakan Minangkabau': '미낭카바우 지역 요리',
+    'Masakan Muna': '무나 지역 요리',
+    'Masakan Nasi Subut': '나시 수붓 요리',
+    'Masakan Nusantara': '인도네시아 전역의 요리',
+    'Masakan Palembang': '팔렘방 지역 요리',
+    'Masakan Papua': '파푸아 지역 요리',
+    'Masakan Papua (Papeda)': '파푸아식 파페다 요리',
+    'Masakan Papua Selatan': '남부 파푸아 요리',
+    'Masakan Peranakan / Bugis': '페라나칸·부기스 요리',
+    'Masakan Peranakan Jawa': '자바식 페라나칸 요리',
+    'Masakan Sasak': '사삭 지역 요리',
+    'Masakan Serang': '세랑 지역 요리',
+    'Masakan Sorong': '소롱 지역 요리',
+    'Masakan Sulawesi Tengah': '중부 술라웨시 요리',
+    'Masakan Sunda': '순다 지역 요리',
+    'Masakan Teochew': '테오추(조주) 요리',
+    'Masakan Ternate': '테르나테 지역 요리',
+    'Masakan Ternate (Gohu Ikan)': '테르나테식 고후 이칸 요리',
+    'Masakan Timor': '티모르 지역 요리',
+    'Masakan Tolaki (Sinonggi)': '톨라키식 시농기 요리',
+    'Sate Khas Bengkulu': '벵쿨루식 사테 꼬치구이',
+    'Seafood / Kepiting Soka': '해산물·소프트셸 크랩 요리',
+    'Seafood Gorontalo': '고론탈로 지역 해산물 요리',
+    'Seafood Kalimantan': '칼리만탄 지역 해산물 요리',
+    'Seafood Khas Sorong': '소롱 지역 특산 해산물 요리',
+    'Seafood Pesisir Bengkulu': '벵쿨루 해안 지역 해산물 요리',
+    'Seafood Sorong': '소롱 지역 해산물 요리',
+    'Seafood Tarakan': '타라칸 지역 해산물 요리',
+    'Seafood Ternate': '테르나테 지역 해산물 요리',
+    'Tempoyak Ikan Patin': '템포약 파틴 생선 요리',
+}
+for _research_restaurant in RESEARCHED_RESTAURANTS:
+    _research_restaurant["food_ko"] = RESEARCH_CUISINE_KO.get(
+        _research_restaurant["food"], _research_restaurant["food"]
+    )
+
 FOOD_INFO = {
     "Rendang": {
         "origin":"West Sumatra · Minangkabau",
@@ -3723,7 +3864,7 @@ PHRASES = [
 DEFAULTS = {
     "language": "한국어", "user_type": None, "reviews": [], "points": 200,
     "favorites": [], "proposed_restaurants": [], "reports": [], "owner_edits": {},
-    "challenge_completed": False, "visited": [], "community_posts": [], "review_likes": {}
+    "challenge_completed": False, "visited": [], "community_posts": [], "review_likes": {}, "review_counter": 0, "editing_review_id": None, "deleting_review_id": None
 }
 for key, value in DEFAULTS.items():
     if key not in st.session_state:
@@ -3910,7 +4051,7 @@ def render_restaurant_details(r):
     c1, c2 = st.columns(2)
     with c1:
         if r.get("data_source") == "local_research":
-            st.write(f'🍽 **{t["cuisine"]}:** {r.get("cuisine", display_food(r))}')
+            st.write(f'🍽 **{t["cuisine"]}:** {display_food(r)}')
             if r.get("local_language"):
                 st.write(f'🗣️ **{t["local_language"]}:** {r["local_language"]}')
         else:
@@ -4116,10 +4257,13 @@ elif menu == f'📍 {t["map"]}':
 elif menu == f'🍛 {t["culture"]}':
     st.title(f'🍛 {t["culture"]}')
     food_names = sorted(set(r["food"] for r in all_restaurants))
-    chosen_food = st.selectbox(t["choose_food"], food_names)
+    chosen_food = st.selectbox(
+        t["choose_food"], food_names,
+        format_func=lambda food: display_food(next(r for r in all_restaurants if r["food"] == food))
+    )
     food_restaurants = [r for r in all_restaurants if r["food"] == chosen_food]
     if food_restaurants:
-        st.subheader(f'{food_restaurants[0]["emoji"]} {chosen_food}')
+        st.subheader(f'{food_restaurants[0]["emoji"]} {display_food(food_restaurants[0])}')
     if chosen_food in FOOD_INFO:
         info = FOOD_INFO[chosen_food]
         st.write(f'📍 **{t["origin"]}:** {display_origin(info["origin"])}')
@@ -4156,8 +4300,21 @@ elif menu == f'🍛 {t["culture"]}':
 elif menu == f'💬 {t["language"]}':
     st.title(f'💬 {t["language"]}')
     st.write(t["translation_intro"])
-    phrase_names = [p["id"] for p in PHRASES]
-    selected_phrase = st.selectbox(t["phrase"], phrase_names)
+    # 선택창에는 앱 언어에 맞는 뜻을 보여주고, 원문 표현도 함께 유지합니다.
+    # 내부 선택값은 인도네시아어 원문으로 유지하므로 언어 전환 시에도 안정적입니다.
+    phrase_labels = {
+        phrase["id"]: (
+            f'{phrase["ko"]} ({phrase["id"]})' if lang == "한국어"
+            else f'{phrase["en"]} ({phrase["id"]})' if lang == "English"
+            else phrase["id"]
+        )
+        for phrase in PHRASES
+    }
+    selected_phrase = st.selectbox(
+        t["phrase"],
+        options=list(phrase_labels.keys()),
+        format_func=lambda phrase_id: phrase_labels[phrase_id],
+    )
     p = next(x for x in PHRASES if x["id"] == selected_phrase)
     c1, c2, c3 = st.columns(3)
     c1.metric("🇮🇩 Bahasa Indonesia", p["id"])
@@ -4174,7 +4331,7 @@ elif menu == f'💬 {t["language"]}':
         key="language_restaurant_select"
     )
     language_restaurant = next(r for r in all_restaurants if r["name"] == language_restaurant_name)
-    st.write(f'**{t["cuisine"]}:** {language_restaurant.get("cuisine", display_food(language_restaurant))}')
+    st.write(f'**{t["cuisine"]}:** {display_food(language_restaurant)}')
     st.write(f'**{t["address"]}:** {display_location(language_restaurant)}')
     if language_restaurant.get("local_language"):
         st.write(f'**{t["local_language"]}:** {language_restaurant["local_language"]}')
@@ -4218,8 +4375,12 @@ elif menu == f'⭐ {t["review"]}':
             review_submit = st.form_submit_button(t["submit"])
         if review_submit:
             photo_bytes = uploaded_photo.getvalue() if uploaded_photo is not None else None
+            st.session_state.review_counter = max(
+                st.session_state.review_counter,
+                *(int(x.get("id", 0)) for x in st.session_state.reviews)
+            ) + 1
             st.session_state.reviews.append({
-                "id": len(st.session_state.reviews) + 1,
+                "id": st.session_state.review_counter,
                 "restaurant": selected_review_restaurant, "rating": overall, "taste": taste,
                 "value": value, "service": service, "cleanliness": cleanliness,
                 "atmosphere": atmosphere_rating, "purpose": purpose, "revisit": revisit,
@@ -4231,6 +4392,7 @@ elif menu == f'⭐ {t["review"]}':
             st.success(t["review_success"])
         st.divider()
         st.subheader(t["recent_reviews"])
+        st.caption(t["review_actions_note"])
         if not st.session_state.reviews:
             st.info(t["no_reviews"])
         else:
@@ -4278,6 +4440,86 @@ elif menu == f'⭐ {t["review"]}':
                                  key=f'like_review_{review_id}'):
                         st.session_state.review_likes[review_id] = st.session_state.review_likes.get(review_id, 0) + 1
                         st.rerun()
+
+                    # 모든 후기는 현재 브라우저 시연 세션에서 작성된 항목입니다.
+                    # 실제 서비스에서는 로그인한 작성자 ID를 확인한 뒤 수정/삭제를 허용해야 합니다.
+                    edit_col, delete_col = st.columns(2)
+                    if edit_col.button(t["edit_review"], key=f"edit_review_{review_id}", use_container_width=True):
+                        st.session_state.editing_review_id = review_id
+                        st.session_state.deleting_review_id = None
+                        st.rerun()
+                    if delete_col.button(t["delete_review"], key=f"delete_review_{review_id}", use_container_width=True):
+                        st.session_state.deleting_review_id = review_id
+                        st.session_state.editing_review_id = None
+                        st.rerun()
+
+                    if st.session_state.editing_review_id == review_id:
+                        st.markdown(f'#### {t["review_edit_heading"]}')
+                        purpose_keys = list(PURPOSE_LABELS[lang].keys())
+                        with st.form(f"edit_review_form_{review_id}"):
+                            updated_restaurant = st.selectbox(
+                                t["visited"], [r["name"] for r in all_restaurants],
+                                index=next((i for i, r in enumerate(all_restaurants) if r["name"] == item["restaurant"]), 0),
+                                format_func=lambda n: display_restaurant(next(r for r in all_restaurants if r["name"] == n))
+                            )
+                            updated_rating = st.slider(t["stars"], 1, 5, int(item["rating"]), key=f"edit_stars_{review_id}")
+                            ec1, ec2, ec3 = st.columns(3)
+                            updated_taste = ec1.slider(t["taste"], 1, 5, int(item.get("taste", 5)), key=f"edit_taste_{review_id}")
+                            updated_value = ec2.slider(t["value"], 1, 5, int(item.get("value", 5)), key=f"edit_value_{review_id}")
+                            updated_service = ec3.slider(t["service"], 1, 5, int(item.get("service", 5)), key=f"edit_service_{review_id}")
+                            ec4, ec5 = st.columns(2)
+                            updated_cleanliness = ec4.slider(t["cleanliness"], 1, 5, int(item.get("cleanliness", 5)), key=f"edit_clean_{review_id}")
+                            updated_atmosphere = ec5.slider(t["atmosphere"], 1, 5, int(item.get("atmosphere", 5)), key=f"edit_atmos_{review_id}")
+                            updated_purpose = st.selectbox(
+                                t["visit_purpose"], purpose_keys,
+                                index=purpose_keys.index(item["purpose"]) if item.get("purpose") in purpose_keys else 0,
+                                format_func=lambda x: PURPOSE_LABELS[lang][x], key=f"edit_purpose_{review_id}"
+                            )
+                            updated_revisit = st.checkbox(t["revisit"], value=bool(item.get("revisit")), key=f"edit_revisit_{review_id}")
+                            updated_culture = st.checkbox(t["culture_check"], value=bool(item.get("culture")), key=f"edit_culture_{review_id}")
+                            updated_hidden = st.checkbox(t["hidden_check"], value=bool(item.get("hidden")), key=f"edit_hidden_{review_id}")
+                            updated_phrase = st.text_input(t["local_phrase"], value=item.get("phrase", ""), key=f"edit_phrase_{review_id}")
+                            updated_text = st.text_area(t["review_text"], value=item.get("review", ""), key=f"edit_text_{review_id}")
+                            if item.get("photo_bytes"):
+                                st.caption(t["keep_photo"])
+                            updated_photo = st.file_uploader(t["replace_photo"], type=["png", "jpg", "jpeg"], key=f"edit_photo_{review_id}")
+                            remove_photo = st.checkbox(t["remove_photo"], key=f"remove_photo_{review_id}") if item.get("photo_bytes") else False
+                            save_changes = st.form_submit_button(t["save_review"])
+                        if save_changes:
+                            item.update({
+                                "restaurant": updated_restaurant, "rating": updated_rating,
+                                "taste": updated_taste, "value": updated_value, "service": updated_service,
+                                "cleanliness": updated_cleanliness, "atmosphere": updated_atmosphere,
+                                "purpose": updated_purpose, "revisit": updated_revisit,
+                                "culture": updated_culture, "hidden": updated_hidden,
+                                "phrase": updated_phrase.strip(), "review": updated_text.strip(),
+                            })
+                            if remove_photo:
+                                item["photo_bytes"], item["photo_name"] = None, None
+                            elif updated_photo is not None:
+                                item["photo_bytes"] = updated_photo.getvalue()
+                                item["photo_name"] = updated_photo.name
+                            st.session_state.editing_review_id = None
+                            st.toast(t["review_updated"])
+                            st.rerun()
+                        if st.button(t["cancel_edit"], key=f"cancel_edit_{review_id}"):
+                            st.session_state.editing_review_id = None
+                            st.rerun()
+
+                    if st.session_state.deleting_review_id == review_id:
+                        st.warning(t["confirm_delete"])
+                        st.caption(t["review_points_notice"])
+                        dc1, dc2 = st.columns(2)
+                        if dc1.button(t["confirm_delete_btn"], key=f"confirm_delete_{review_id}", use_container_width=True):
+                            st.session_state.reviews = [r for r in st.session_state.reviews if r.get("id") != review_id]
+                            st.session_state.review_likes.pop(review_id, None)
+                            st.session_state.points = max(0, st.session_state.points - 50)
+                            st.session_state.deleting_review_id = None
+                            st.toast(t["review_deleted"])
+                            st.rerun()
+                        if dc2.button(t["cancel_delete"], key=f"cancel_delete_{review_id}", use_container_width=True):
+                            st.session_state.deleting_review_id = None
+                            st.rerun()
 
     with community_tab:
         st.write(t["post_placeholder"])
