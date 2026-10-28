@@ -62,7 +62,68 @@ T = {
         "complete_challenge": "챌린지 완료", "challenge_success": "챌린지 완료! +100P",
         "written_reviews": "작성한 후기", "change_role": "이용 유형 변경",
         "no_results": "조건에 맞는 음식점이 없습니다. 필터를 바꿔보세요.",
-        "culture_review": "문화 경험", "upload_note": "사진은 현재 시연 세션에서만 표시됩니다."
+        "culture_review": "문화 경험", "upload_note": "사진은 현재 시연 세션에서만 표시됩니다.",
+        'ui_language': '언어',
+        'report_address': '주소 수정',
+        'report_hours': '영업시간 수정',
+        'report_menu': '메뉴·가격 수정',
+        'other': '기타',
+        'name_required': '음식점 이름과 대표 음식 이름을 입력해주세요.',
+        'local_restaurant_language': '음식점과 지역 언어',
+        'default_tags': '숨은 맛집, 지역 음식',
+        'alert_new_reviews': '이 시연 세션에 등록된 새 후기: {count}개',
+        'no_reports': '아직 수정 요청이 없습니다.',
+        'food_tour': '로컬 음식 탐방',
+        'spicy_hot': '매운 음식',
+        'spicy_mild': '맵지 않은 음식',
+        'tag_hidden': '숨은 맛집',
+        'tag_research': '현지 조사 맛집',
+        'unknown_preference': '정보가 있는 음식점에만 반영됩니다.',
+        'ingredients_unavailable': '재료에 대한 추가 확인이 필요합니다.',
+        'review_tab': '맛집 후기',
+        'community_tab': '문화 커뮤니티',
+        'cleanliness': '청결도',
+        'atmosphere': '분위기 평가',
+        'revisit': '재방문 의사',
+        'visit_purpose': '방문 목적',
+        'review_filter': '후기 음식점 필터',
+        'review_sort': '후기 정렬',
+        'sort_latest': '최신순',
+        'sort_rating': '별점 높은 순',
+        'sort_likes': '좋아요 많은 순',
+        'like': '좋아요',
+        'review_search': '후기 검색',
+        'question': '질문',
+        'tip': '현지 정보 공유',
+        'experience': '문화 경험',
+        'post_type': '게시글 유형',
+        'post_title': '제목',
+        'post_body': '내용',
+        'post_submit': '게시글 작성',
+        'post_success': '커뮤니티 게시글을 등록했어요!',
+        'post_placeholder': '현지 음식과 언어, 숨은 맛집에 대한 이야기를 공유해보세요.',
+        'reply': '댓글',
+        'reply_submit': '댓글 등록',
+        'reply_placeholder': '답변이나 경험을 남겨주세요.',
+        'no_posts': '아직 커뮤니티 글이 없어요. 첫 글을 남겨보세요!',
+        'more_preferences': '추가 취향 설정',
+        'mood_pref': '선호 분위기',
+        'ingredient_pref': '선호 재료/음식',
+        'hidden_pref': '탐색 스타일',
+        'hidden_only': '숨은 로컬 맛집 우선',
+        'research_only': '현지 조사 맛집 우선',
+        'adventurous': '새로운 음식 도전',
+        'adventure_yes': '새로운 음식도 좋아요',
+        'adventure_no': '익숙한 음식을 선호해요',
+        'adventure_any': '상관없어요',
+        'not_verified': '미확인 항목은 추천 점수에 반영하지 않았습니다.',
+        'recommended_results': '맞춤 추천 결과',
+        'post_kind_question': '질문',
+        'post_kind_tip': '현지 정보',
+        'post_kind_experience': '문화 체험',
+        'anonymous': '게스트',
+        'report_review': '이용자 후기는 현재 시연 세션에서만 유지됩니다.',
+        'recommend_all': '취향에 맞는 음식점을 찾아보세요.',
     },
     "English": {
         "menu": "Menu", "home": "Home", "map": "Local Restaurant Map",
@@ -118,7 +179,68 @@ T = {
         "complete_challenge": "Complete challenge", "challenge_success": "Challenge completed! +100P",
         "written_reviews": "Reviews written", "change_role": "Change user type",
         "no_results": "No restaurants match those filters. Try changing them.",
-        "culture_review": "Cultural experience", "upload_note": "Photos are shown only during this demo session."
+        "culture_review": "Cultural experience", "upload_note": "Photos are shown only during this demo session.",
+        'ui_language': 'Language',
+        'report_address': 'Correct address',
+        'report_hours': 'Correct opening hours',
+        'report_menu': 'Correct menu or price',
+        'other': 'Other',
+        'name_required': 'Please enter a restaurant name and a signature dish.',
+        'local_restaurant_language': 'Restaurants and regional languages',
+        'default_tags': 'Hidden gem, local cuisine',
+        'alert_new_reviews': 'New reviews in this demo session: {count}',
+        'no_reports': 'No correction requests yet.',
+        'food_tour': 'Local food discovery',
+        'spicy_hot': 'Spicy food',
+        'spicy_mild': 'Non-spicy food',
+        'tag_hidden': 'Hidden gem',
+        'tag_research': 'Locally researched restaurants',
+        'unknown_preference': 'Only verified attributes are used for this preference.',
+        'ingredients_unavailable': 'Ingredient details still need verification.',
+        'review_tab': 'Restaurant reviews',
+        'community_tab': 'Culture community',
+        'cleanliness': 'Cleanliness',
+        'atmosphere': 'Atmosphere rating',
+        'revisit': 'Would visit again',
+        'visit_purpose': 'Visit occasion',
+        'review_filter': 'Filter by restaurant',
+        'review_sort': 'Sort reviews',
+        'sort_latest': 'Newest first',
+        'sort_rating': 'Highest rating',
+        'sort_likes': 'Most liked',
+        'like': 'Like',
+        'review_search': 'Search reviews',
+        'question': 'Question',
+        'tip': 'Local tips',
+        'experience': 'Cultural experience',
+        'post_type': 'Post type',
+        'post_title': 'Title',
+        'post_body': 'Message',
+        'post_submit': 'Publish post',
+        'post_success': 'Your community post has been published!',
+        'post_placeholder': 'Share your food, language, and hidden restaurant discoveries.',
+        'reply': 'Replies',
+        'reply_submit': 'Post reply',
+        'reply_placeholder': 'Share an answer or your experience.',
+        'no_posts': 'No community posts yet. Start the conversation!',
+        'more_preferences': 'More preferences',
+        'mood_pref': 'Preferred atmosphere',
+        'ingredient_pref': 'Preferred ingredient / dish',
+        'hidden_pref': 'Discovery style',
+        'hidden_only': 'Prioritize hidden local gems',
+        'research_only': 'Prioritize locally researched restaurants',
+        'adventurous': 'Try something new',
+        'adventure_yes': 'Open to new dishes',
+        'adventure_no': 'Prefer familiar dishes',
+        'adventure_any': 'No preference',
+        'not_verified': 'Unknown attributes were not used to score recommendations.',
+        'recommended_results': 'Your recommendations',
+        'post_kind_question': 'Question',
+        'post_kind_tip': 'Local tip',
+        'post_kind_experience': 'Cultural experience',
+        'anonymous': 'Guest',
+        'report_review': 'Reviews are stored only for this demo session.',
+        'recommend_all': 'Find restaurants that fit your preferences.',
     },
     "Bahasa Indonesia": {
         "menu": "Menu", "home": "Beranda", "map": "Peta Kuliner Lokal",
@@ -174,7 +296,68 @@ T = {
         "complete_challenge": "Selesaikan tantangan", "challenge_success": "Tantangan selesai! +100P",
         "written_reviews": "Ulasan yang ditulis", "change_role": "Ubah jenis pengguna",
         "no_results": "Tidak ada restoran yang cocok. Coba ubah filter.",
-        "culture_review": "Pengalaman budaya", "upload_note": "Foto hanya ditampilkan selama sesi demo ini."
+        "culture_review": "Pengalaman budaya", "upload_note": "Foto hanya ditampilkan selama sesi demo ini.",
+        'ui_language': 'Bahasa',
+        'report_address': 'Perbaiki alamat',
+        'report_hours': 'Perbaiki jam buka',
+        'report_menu': 'Perbaiki menu atau harga',
+        'other': 'Lainnya',
+        'name_required': 'Masukkan nama restoran dan menu utama.',
+        'local_restaurant_language': 'Restoran dan bahasa daerah',
+        'default_tags': 'Kuliner tersembunyi, masakan lokal',
+        'alert_new_reviews': 'Ulasan baru dalam sesi demo ini: {count}',
+        'no_reports': 'Belum ada permintaan koreksi.',
+        'food_tour': 'Jelajah kuliner lokal',
+        'spicy_hot': 'Makanan pedas',
+        'spicy_mild': 'Tidak pedas',
+        'tag_hidden': 'Kuliner tersembunyi',
+        'tag_research': 'Restoran hasil riset lokal',
+        'unknown_preference': 'Hanya atribut yang diketahui digunakan untuk preferensi ini.',
+        'ingredients_unavailable': 'Rincian bahan masih perlu diverifikasi.',
+        'review_tab': 'Ulasan restoran',
+        'community_tab': 'Komunitas budaya',
+        'cleanliness': 'Kebersihan',
+        'atmosphere': 'Penilaian suasana',
+        'revisit': 'Ingin berkunjung lagi',
+        'visit_purpose': 'Tujuan kunjungan',
+        'review_filter': 'Filter restoran',
+        'review_sort': 'Urutkan ulasan',
+        'sort_latest': 'Terbaru',
+        'sort_rating': 'Rating tertinggi',
+        'sort_likes': 'Paling disukai',
+        'like': 'Suka',
+        'review_search': 'Cari ulasan',
+        'question': 'Pertanyaan',
+        'tip': 'Tips lokal',
+        'experience': 'Pengalaman budaya',
+        'post_type': 'Jenis postingan',
+        'post_title': 'Judul',
+        'post_body': 'Isi',
+        'post_submit': 'Terbitkan postingan',
+        'post_success': 'Postingan komunitas berhasil diterbitkan!',
+        'post_placeholder': 'Bagikan pengalaman kuliner, bahasa, dan restoran tersembunyi.',
+        'reply': 'Balasan',
+        'reply_submit': 'Kirim balasan',
+        'reply_placeholder': 'Bagikan jawaban atau pengalaman Anda.',
+        'no_posts': 'Belum ada postingan komunitas. Mulailah berbagi!',
+        'more_preferences': 'Preferensi tambahan',
+        'mood_pref': 'Suasana pilihan',
+        'ingredient_pref': 'Bahan / makanan pilihan',
+        'hidden_pref': 'Gaya eksplorasi',
+        'hidden_only': 'Utamakan kuliner lokal tersembunyi',
+        'research_only': 'Utamakan restoran hasil riset lokal',
+        'adventurous': 'Coba makanan baru',
+        'adventure_yes': 'Suka mencoba makanan baru',
+        'adventure_no': 'Lebih suka makanan yang dikenal',
+        'adventure_any': 'Tidak ada preferensi',
+        'not_verified': 'Atribut yang belum diketahui tidak memengaruhi rekomendasi.',
+        'recommended_results': 'Rekomendasi untuk Anda',
+        'post_kind_question': 'Pertanyaan',
+        'post_kind_tip': 'Tips lokal',
+        'post_kind_experience': 'Pengalaman budaya',
+        'anonymous': 'Pengunjung',
+        'report_review': 'Ulasan hanya disimpan selama sesi demo ini.',
+        'recommend_all': 'Temukan restoran yang sesuai dengan selera Anda.',
     }
 }
 
@@ -3540,7 +3723,7 @@ PHRASES = [
 DEFAULTS = {
     "language": "한국어", "user_type": None, "reviews": [], "points": 200,
     "favorites": [], "proposed_restaurants": [], "reports": [], "owner_edits": {},
-    "challenge_completed": False, "visited": []
+    "challenge_completed": False, "visited": [], "community_posts": [], "review_likes": {}
 }
 for key, value in DEFAULTS.items():
     if key not in st.session_state:
@@ -3565,6 +3748,85 @@ MOOD_LABELS = {
     "English": {"Traditional":"Traditional","Local favorite":"Local favorite","Quiet":"Quiet","Casual":"Casual","Lively":"Lively"},
     "Bahasa Indonesia": {"Traditional":"Tradisional","Local favorite":"Favorit lokal","Quiet":"Tenang","Casual":"Santai","Lively":"Ramai"}
 }
+TAG_TRANSLATIONS = {
+    "전통 음식": ("Traditional food", "Makanan tradisional"),
+    "숨은 맛집": ("Hidden gem", "Kuliner tersembunyi"),
+    "현지인 추천": ("Local favorite", "Favorit warga lokal"),
+    "매운 음식": ("Spicy food", "Makanan pedas"),
+    "맵지 않음": ("Non-spicy", "Tidak pedas"),
+    "길거리 음식": ("Street food", "Jajanan kaki lima"),
+    "친구와 함께": ("With friends", "Bersama teman"),
+    "저렴한 식사": ("Budget meal", "Makanan hemat"),
+    "채소 요리": ("Vegetable dish", "Hidangan sayur"),
+    "간식": ("Snack", "Camilan"),
+    "지역 특산 음식": ("Regional specialty", "Kuliner khas daerah"),
+    "해산물": ("Seafood", "Hidangan laut"),
+    "인기 메뉴": ("Popular dish", "Menu populer"),
+    "현지 조사 자료": ("Local research", "Hasil riset lokal"),
+    "지역 문화": ("Local culture", "Budaya lokal")
+}
+
+def display_tag(value):
+    if lang == "한국어":
+        return value
+    translation = TAG_TRANSLATIONS.get(value)
+    return translation[0 if lang == "English" else 1] if translation else value
+
+# English/Indonesian ingredient descriptions for foods in the sample data.
+FOOD_INGREDIENTS = {
+    "Rendang": ("Beef, coconut milk, chili, and spices", "Daging sapi, santan, cabai, dan rempah"),
+    "Soto Betawi": ("Meat, coconut milk or milk, herbs, and spices", "Daging, santan atau susu, herba, dan rempah"),
+    "Gudeg": ("Young jackfruit, coconut milk, palm sugar, and spices", "Nangka muda, santan, gula aren, dan rempah"),
+    "Sate Ayam": ("Chicken, peanut sauce, soy sauce, and spices", "Ayam, saus kacang, kecap, dan rempah"),
+    "Pempek": ("Fish, tapioca starch, and cuko sauce", "Ikan, tepung tapioka, dan kuah cuko"),
+    "Rawon": ("Beef, kluwek, garlic, shallots, and spices", "Daging sapi, kluwek, bawang putih, bawang merah, dan rempah"),
+    "Nasi Padang": ("Rice, side dishes, coconut milk, and spices", "Nasi, aneka lauk, santan, dan rempah"),
+    "Nasi Goreng": ("Rice, sweet soy sauce, garlic, shallots, and egg", "Nasi, kecap manis, bawang putih, bawang merah, dan telur"),
+    "Nasi Uduk": ("Rice, coconut milk, lemongrass, and pandan", "Nasi, santan, serai, dan daun pandan"),
+    "Mie Aceh": ("Thick noodles, spices, vegetables, meat or seafood", "Mi tebal, rempah, sayuran, daging atau seafood"),
+    "Es Cendol": ("Rice-flour jelly, coconut milk, palm sugar, and ice", "Cendol, santan, gula aren, dan es"),
+    "Bakso": ("Meatballs, broth, noodles, and vegetables", "Bakso, kuah, mi, dan sayuran"),
+    "Gado-Gado": ("Vegetables, tofu, tempeh, egg, and peanut sauce", "Sayuran, tahu, tempe, telur, dan saus kacang"),
+    "Ayam Geprek": ("Fried chicken, chili, garlic, and sambal", "Ayam goreng, cabai, bawang putih, dan sambal"),
+    "Martabak": ("Dough, eggs, or sweet fillings depending on the type", "Adonan, telur, atau isian manis sesuai jenis"),
+    "Mie": ("Noodles, vegetables, spices, meat or seafood", "Mi, sayuran, rempah, daging atau seafood")
+}
+FOOD_ORIGIN_TRANSLATIONS = {
+    "인도네시아 여러 지역": ("Various regions of Indonesia", "Berbagai daerah di Indonesia"),
+    "인도네시아 전역": ("Across Indonesia", "Seluruh Indonesia"),
+    "인도네시아, 특히 자카르타와 관련": ("Indonesia, especially Jakarta", "Indonesia, terutama Jakarta"),
+    "인도네시아, 특히 Java 지역에서 널리 인기": ("Indonesia, especially Java", "Indonesia, terutama Jawa"),
+    "인도네시아 전역에서 인기": ("Popular across Indonesia", "Populer di seluruh Indonesia"),
+    "인도네시아와 동남아시아 여러 지역": ("Indonesia and other Southeast Asian regions", "Indonesia dan wilayah Asia Tenggara lainnya")
+}
+PHRASE_CONTEXT = {
+    "Halo": ("Used as a greeting", "Digunakan untuk menyapa"),
+    "Saya mau pesan ini.": ("Use when ordering a dish", "Digunakan saat memesan makanan"),
+    "Terima kasih.": ("To say thank you", "Untuk berterima kasih"),
+    "Tidak pedas, ya.": ("Ask for a non-spicy dish", "Meminta makanan tidak pedas"),
+    "Berapa harganya?": ("Ask the price", "Menanyakan harga"),
+    "Enak sekali!": ("Praise a delicious dish", "Memuji makanan yang lezat"),
+    "Minta menu, ya.": ("Ask for the menu", "Meminta daftar menu")
+}
+PHRASE_ROMANIZATION = {
+    "Halo": "ha-lo", "Saya mau pesan ini.": "sa-ya ma-u pe-san i-ni",
+    "Terima kasih.": "te-ri-ma ka-sih", "Tidak pedas, ya.": "ti-dak pe-das ya",
+    "Berapa harganya?": "be-ra-pa har-ga-nya", "Enak sekali!": "e-nak se-ka-li",
+    "Minta menu, ya.": "min-ta me-nu ya"
+}
+
+def display_ingredients(food, info):
+    if lang == "한국어":
+        return info["ingredients"]
+    value = FOOD_INGREDIENTS.get(food)
+    return value[0 if lang == "English" else 1] if value else t["ingredients_unavailable"]
+
+def display_origin(value):
+    if lang == "한국어":
+        return value
+    pair = FOOD_ORIGIN_TRANSLATIONS.get(value)
+    return pair[0 if lang == "English" else 1] if pair else value
+
 AREA_COORDS = {
     "Central Jakarta": (-6.2000, 106.8166),
     "South Jakarta": (-6.2297, 106.8295),
@@ -3687,12 +3949,22 @@ def add_favorite_button(r, key_suffix=""):
 # ---------------------------------------------------------
 st.sidebar.title("🍜 KULOKAL")
 st.sidebar.caption("Discover Local, Taste the Culture")
-language = st.sidebar.selectbox("🌐 Language", ["한국어", "English", "Bahasa Indonesia"],
-                                index=["한국어", "English", "Bahasa Indonesia"].index(lang))
-if language != lang:
-    st.session_state.language = language
-    st.rerun()
-t = T[lang]
+LANGUAGE_OPTION_LABELS = {
+    "한국어": {"한국어": "한국어", "English": "영어", "Bahasa Indonesia": "인도네시아어"},
+    "English": {"한국어": "Korean", "English": "English", "Bahasa Indonesia": "Indonesian"},
+    "Bahasa Indonesia": {"한국어": "Bahasa Korea", "English": "Bahasa Inggris", "Bahasa Indonesia": "Bahasa Indonesia"}
+}
+
+def switch_language():
+    st.session_state.language = st.session_state.language_picker
+
+if "language_picker" not in st.session_state:
+    st.session_state.language_picker = st.session_state.language
+st.sidebar.selectbox(
+    f'🌐 {t["ui_language"]}', ["한국어", "English", "Bahasa Indonesia"],
+    key="language_picker", on_change=switch_language,
+    format_func=lambda code: LANGUAGE_OPTION_LABELS[lang][code]
+)
 
 nav = [
     ("🏠", t["home"]), ("📍", t["map"]), ("🍛", t["culture"]),
@@ -3797,7 +4069,7 @@ elif menu == f'📍 {t["map"]}':
         add_favorite_button(selected, "map")
         with st.expander(t["report"]):
             with st.form("report_form"):
-                report_kind = st.selectbox(t["report_type"], ["주소 수정", "영업시간 수정", "메뉴·가격 수정", "기타"])
+                report_kind = st.selectbox(t["report_type"], [t["report_address"], t["report_hours"], t["report_menu"], t["other"]])
                 report_details = st.text_area(t["report_details"])
                 report_submit = st.form_submit_button(t["submit"])
             if report_submit:
@@ -3818,11 +4090,11 @@ elif menu == f'📍 {t["map"]}':
             new_address = st.text_input(t["address"], new_area + " · demo location")
             new_hours = st.text_input(t["hours"], "10:00–22:00 · demo")
             new_spicy = st.checkbox(t["spicy"] + " 🌶️")
-            new_tags = st.text_input(t["tag"], "숨은 맛집, 지역 음식")
+            new_tags = st.text_input(t["tag"], t["default_tags"])
             suggest_submit = st.form_submit_button(t["submit"])
         if suggest_submit:
             if not new_name.strip() or not new_food.strip():
-                st.error("음식점 이름과 대표 음식 이름을 입력해주세요.")
+                st.error(t["name_required"])
             else:
                 lat, lon = AREA_COORDS[new_area]
                 cat_key = next((k for k, v in CATEGORY_NAMES.items() if v == new_category_label), "Traditional")
@@ -3850,18 +4122,18 @@ elif menu == f'🍛 {t["culture"]}':
         st.subheader(f'{food_restaurants[0]["emoji"]} {chosen_food}')
     if chosen_food in FOOD_INFO:
         info = FOOD_INFO[chosen_food]
-        st.write(f'📍 **{t["origin"]}:** {info["origin"]}')
+        st.write(f'📍 **{t["origin"]}:** {display_origin(info["origin"])}')
         if lang == "한국어":
             st.write(f'📖 **{t["meaning"]}:** {info["meaning"]}')
-            st.write(f'🥥 **{t["ingredients"]}:** {info["ingredients"]}')
+            st.write(f'🥥 **{t["ingredients"]}:** {display_ingredients(chosen_food, info)}')
             st.info(f'🏺 **{t["culture_note"]}:** {info["culture"]}')
         elif lang == "English":
             st.write(f'📖 **{t["meaning"]}:** {info["en"]}')
-            st.write(f'🥥 **{t["ingredients"]}:** {info["ingredients"]}')
+            st.write(f'🥥 **{t["ingredients"]}:** {display_ingredients(chosen_food, info)}')
             st.info(f'🏺 **{t["culture_note"]}:** {info["en"]}')
         else:
             st.write(f'📖 **{t["meaning"]}:** {info["id"]}')
-            st.write(f'🥥 **{t["ingredients"]}:** {info["ingredients"]}')
+            st.write(f'🥥 **{t["ingredients"]}:** {display_ingredients(chosen_food, info)}')
             st.info(f'🏺 **{t["culture_note"]}:** {info["id"]}')
     else:
         local_languages = sorted(set(r.get("local_language", "") for r in food_restaurants if r.get("local_language")))
@@ -3891,10 +4163,10 @@ elif menu == f'💬 {t["language"]}':
     c1.metric("🇮🇩 Bahasa Indonesia", p["id"])
     c2.metric("🇰🇷 한국어", p["ko"])
     c3.metric("🇺🇸 English", p["en"])
-    st.info(f'🗣️ **{t["pronunciation"]}:** {p["pron"]}')
-    st.caption(p["meaning"])
+    st.info(f'🗣️ **{t["pronunciation"]}:** {p["pron"] if lang == "한국어" else PHRASE_ROMANIZATION[p["id"]]}')
+    st.caption(p["meaning"] if lang == "한국어" else PHRASE_CONTEXT[p["id"]][0 if lang == "English" else 1])
     st.divider()
-    st.subheader("🍽️ 음식점과 지역 언어")
+    st.subheader(f'🍽️ {t["local_restaurant_language"]}')
     language_restaurant_name = st.selectbox(
         t["restaurant_name"],
         [r["name"] for r in all_restaurants],
@@ -3918,52 +4190,131 @@ elif menu == f'💬 {t["language"]}':
 # ---------------------------------------------------------
 elif menu == f'⭐ {t["review"]}':
     st.title(f'⭐ {t["review"]}')
-    st.write(t["intro"])
-    with st.form("review_form", clear_on_submit=True):
-        restaurant_names = [r["name"] for r in all_restaurants]
-        selected_review_restaurant = st.selectbox(t["visited"], restaurant_names,
-            format_func=lambda n: display_restaurant(next(r for r in all_restaurants if r["name"] == n)))
-        overall = st.slider(t["stars"], 1, 5, 5)
-        c1, c2, c3 = st.columns(3)
-        taste = c1.slider(t["taste"], 1, 5, 5)
-        value = c2.slider(t["value"], 1, 5, 4)
-        service = c3.slider(t["service"], 1, 5, 5)
-        culture = st.checkbox(t["culture_check"])
-        hidden = st.checkbox(t["hidden_check"])
-        phrase = st.text_input(t["local_phrase"])
-        review_text = st.text_area(t["review_text"])
-        uploaded_photo = st.file_uploader(t["photo"], type=["png", "jpg", "jpeg"])
-        review_submit = st.form_submit_button(t["submit"])
-    if review_submit:
-        photo_bytes = uploaded_photo.getvalue() if uploaded_photo is not None else None
-        st.session_state.reviews.append({
-            "restaurant": selected_review_restaurant, "rating": overall, "taste": taste,
-            "value": value, "service": service, "culture": culture, "hidden": hidden,
-            "phrase": phrase.strip(), "review": review_text.strip(),
-            "photo_bytes": photo_bytes, "photo_name": uploaded_photo.name if uploaded_photo else None
-        })
-        st.session_state.points += 50
-        st.success(t["review_success"])
-        st.caption(t["upload_note"])
-    st.divider()
-    st.subheader(t["recent_reviews"])
-    if not st.session_state.reviews:
-        st.info(t["no_reviews"])
-    else:
-        for item in reversed(st.session_state.reviews):
-            match = next((r for r in all_restaurants if r["name"] == item["restaurant"]), None)
-            title = display_restaurant(match) if match else item["restaurant"]
+    st.write(t["report_review"])
+    review_tab, community_tab = st.tabs([f'⭐ {t["review_tab"]}', f'💬 {t["community_tab"]}'])
+    with review_tab:
+        with st.form("review_form", clear_on_submit=True):
+            restaurant_names = [r["name"] for r in all_restaurants]
+            selected_review_restaurant = st.selectbox(
+                t["visited"], restaurant_names,
+                format_func=lambda n: display_restaurant(next(r for r in all_restaurants if r["name"] == n))
+            )
+            overall = st.slider(t["stars"], 1, 5, 5)
+            c1, c2, c3 = st.columns(3)
+            taste = c1.slider(t["taste"], 1, 5, 5)
+            value = c2.slider(t["value"], 1, 5, 4)
+            service = c3.slider(t["service"], 1, 5, 5)
+            c4, c5 = st.columns(2)
+            cleanliness = c4.slider(t["cleanliness"], 1, 5, 5)
+            atmosphere_rating = c5.slider(t["atmosphere"], 1, 5, 5)
+            purpose = st.selectbox(t["visit_purpose"], list(PURPOSE_LABELS[lang].keys()),
+                                   format_func=lambda x: PURPOSE_LABELS[lang][x])
+            revisit = st.checkbox(t["revisit"])
+            culture = st.checkbox(t["culture_check"])
+            hidden = st.checkbox(t["hidden_check"])
+            phrase = st.text_input(t["local_phrase"])
+            review_text = st.text_area(t["review_text"])
+            uploaded_photo = st.file_uploader(t["photo"], type=["png", "jpg", "jpeg"])
+            review_submit = st.form_submit_button(t["submit"])
+        if review_submit:
+            photo_bytes = uploaded_photo.getvalue() if uploaded_photo is not None else None
+            st.session_state.reviews.append({
+                "id": len(st.session_state.reviews) + 1,
+                "restaurant": selected_review_restaurant, "rating": overall, "taste": taste,
+                "value": value, "service": service, "cleanliness": cleanliness,
+                "atmosphere": atmosphere_rating, "purpose": purpose, "revisit": revisit,
+                "culture": culture, "hidden": hidden, "phrase": phrase.strip(),
+                "review": review_text.strip(), "photo_bytes": photo_bytes,
+                "photo_name": uploaded_photo.name if uploaded_photo else None
+            })
+            st.session_state.points += 50
+            st.success(t["review_success"])
+        st.divider()
+        st.subheader(t["recent_reviews"])
+        if not st.session_state.reviews:
+            st.info(t["no_reviews"])
+        else:
+            filter_options = [None] + sorted({x["restaurant"] for x in st.session_state.reviews})
+            filter_name = st.selectbox(t["review_filter"], filter_options,
+                format_func=lambda n: t["all"] if n is None else display_restaurant(
+                    next((r for r in all_restaurants if r["name"] == n), {"name":n})))
+            review_search = st.text_input(t["review_search"])
+            sort_type = st.selectbox(t["review_sort"], ["latest", "rating", "likes"],
+                format_func=lambda k: {"latest":t["sort_latest"], "rating":t["sort_rating"], "likes":t["sort_likes"]}[k])
+            filtered_reviews = [x for x in st.session_state.reviews
+                if (filter_name is None or x["restaurant"] == filter_name)
+                and (not review_search or review_search.casefold() in
+                     (x.get("review", "") + " " + x.get("phrase", "")).casefold())]
+            if sort_type == "rating":
+                filtered_reviews.sort(key=lambda x: x["rating"], reverse=True)
+            elif sort_type == "likes":
+                filtered_reviews.sort(key=lambda x: st.session_state.review_likes.get(x.get("id"), 0), reverse=True)
+            else:
+                filtered_reviews.reverse()
+            if not filtered_reviews:
+                st.info(t["no_results"])
+            for item in filtered_reviews:
+                match = next((r for r in all_restaurants if r["name"] == item["restaurant"]), None)
+                title = display_restaurant(match) if match else item["restaurant"]
+                with st.container(border=True):
+                    st.write(f'**{title}** · {"⭐" * item["rating"]}')
+                    if item.get("review"):
+                        st.write(item["review"])
+                    st.caption(f'{t["taste"]}: {item["taste"]}/5 · {t["value"]}: {item["value"]}/5 · {t["service"]}: {item["service"]}/5')
+                    st.caption(f'{t["cleanliness"]}: {item.get("cleanliness", "–")}/5 · {t["atmosphere"]}: {item.get("atmosphere", "–")}/5')
+                    tags = []
+                    if item.get("purpose"):
+                        tags.append(PURPOSE_LABELS[lang].get(item["purpose"], item["purpose"]))
+                    if item.get("revisit"): tags.append(t["revisit"])
+                    if item.get("culture"): tags.append(t["culture_review"])
+                    if item.get("hidden"): tags.append(t["hidden_check"])
+                    if tags: st.caption(" · ".join(tags))
+                    if item.get("phrase"):
+                        st.info(f'{t["local_phrase"]}: {item["phrase"]}')
+                    if item.get("photo_bytes"):
+                        st.image(item["photo_bytes"], caption=item.get("photo_name", "Food photo"), use_container_width=True)
+                    review_id = item.get("id", id(item))
+                    if st.button(f'♡ {t["like"]} · {st.session_state.review_likes.get(review_id, 0)}',
+                                 key=f'like_review_{review_id}'):
+                        st.session_state.review_likes[review_id] = st.session_state.review_likes.get(review_id, 0) + 1
+                        st.rerun()
+
+    with community_tab:
+        st.write(t["post_placeholder"])
+        post_types = ["question", "tip", "experience"]
+        type_labels = {"question":t["post_kind_question"], "tip":t["post_kind_tip"],
+                       "experience":t["post_kind_experience"]}
+        with st.form("community_post_form", clear_on_submit=True):
+            post_type = st.selectbox(t["post_type"], post_types, format_func=lambda k: type_labels[k])
+            post_title = st.text_input(t["post_title"])
+            post_body = st.text_area(t["post_body"])
+            submit_post = st.form_submit_button(t["post_submit"])
+        if submit_post:
+            if post_title.strip() and post_body.strip():
+                st.session_state.community_posts.append({
+                    "id": len(st.session_state.community_posts) + 1,
+                    "type": post_type, "title": post_title.strip(), "body": post_body.strip(), "replies": []
+                })
+                st.success(t["post_success"])
+            else:
+                st.warning(t["post_title"] + " / " + t["post_body"])
+        st.divider()
+        if not st.session_state.community_posts:
+            st.info(t["no_posts"])
+        for post in reversed(st.session_state.community_posts):
             with st.container(border=True):
-                st.write(f'**{title}** · {"⭐" * item["rating"]}')
-                if item.get("review"):
-                    st.write(item["review"])
-                st.caption(f'{t["taste"]}: {item["taste"]}/5 · {t["value"]}: {item["value"]}/5 · {t["service"]}: {item["service"]}/5')
-                tags = []
-                if item.get("culture"): tags.append(t["culture_review"])
-                if item.get("hidden"): tags.append(t["hidden_check"])
-                if tags: st.caption(" · ".join(tags))
-                if item.get("phrase"): st.info(f'{t["local_phrase"]}: {item["phrase"]}')
-                if item.get("photo_bytes"): st.image(item["photo_bytes"], caption=item.get("photo_name", "Food photo"), use_container_width=True)
+                st.caption(type_labels.get(post["type"], t["community_tab"]))
+                st.subheader(post["title"])
+                st.write(post["body"])
+                st.caption(f'{t["reply"]}: {len(post["replies"])}')
+                for reply in post["replies"]:
+                    st.write(f'💬 {reply}')
+                with st.form(f'community_reply_{post["id"]}', clear_on_submit=True):
+                    reply_text = st.text_input(t["reply"], placeholder=t["reply_placeholder"])
+                    reply_submit = st.form_submit_button(t["reply_submit"])
+                if reply_submit and reply_text.strip():
+                    post["replies"].append(reply_text.strip())
+                    st.rerun()
 
 # ---------------------------------------------------------
 # 맞춤 추천
@@ -3972,48 +4323,72 @@ elif menu == f'✨ {t["recommend"]}':
     st.title(f'✨ {t["recommend"]}')
     st.write(t["recommend_intro"])
     c1, c2 = st.columns(2)
-    spicy_choice = c1.selectbox(t["spicy"], [t["all"], "🌶️ 매운 음식", "🌿 맵지 않은 음식"])
+    spicy_choice = c1.selectbox(t["spicy"], ["any", "hot", "mild"],
+        format_func=lambda k: {"any":t["all"], "hot":t["spicy_hot"], "mild":t["spicy_mild"]}[k])
     budget_choice = c2.selectbox(t["price_filter"], [t["all"], t["budget"], t["mid"], t["high"]])
-    category_labels = [t["all"]] + list(CATEGORY_NAMES.values())
-    category_choice = st.selectbox(t["food_type"], category_labels)
-    areas = [t["all"]] + sorted(set(region_name(r) for r in all_restaurants))
-    area_choice = st.selectbox(t["region"], areas)
+    c3, c4 = st.columns(2)
+    category_choice = c3.selectbox(t["food_type"], [None] + list(CATEGORY_NAMES.keys()),
+        format_func=lambda k: t["all"] if k is None else CATEGORY_NAMES[k])
+    area_choice = c4.selectbox(t["region"], [t["all"]] + sorted(set(region_name(r) for r in all_restaurants)))
     all_tags = sorted(set(tag for r in all_restaurants for tag in r.get("tags", [])))
-    tag_choice = st.selectbox(t["tag"], [t["all"]] + all_tags)
-    use_favorites = st.checkbox(t["use_favorites"])
+    tag_choice = st.selectbox(t["tag"], [None] + all_tags,
+        format_func=lambda x: t["all"] if x is None else display_tag(x))
+    with st.expander(t["more_preferences"], expanded=True):
+        c5, c6 = st.columns(2)
+        purpose_choice = c5.selectbox(t["visit_purpose"], [None] + list(PURPOSE_LABELS[lang].keys()),
+            format_func=lambda x: t["all"] if x is None else PURPOSE_LABELS[lang][x])
+        mood_choice = c6.selectbox(t["mood_pref"], [None] + list(MOOD_LABELS[lang].keys()),
+            format_func=lambda x: t["all"] if x is None else MOOD_LABELS[lang][x])
+        c7, c8 = st.columns(2)
+        ingredient_choice = c7.selectbox(t["ingredient_pref"], [None, "Meat", "Chicken", "Seafood", "Vegetable"],
+            format_func=lambda x: t["all"] if x is None else CATEGORY_NAMES[x])
+        hidden_choice = c8.selectbox(t["hidden_pref"], ["all", "hidden", "research"],
+            format_func=lambda x: {"all":t["all"], "hidden":t["hidden_only"], "research":t["research_only"]}[x])
+        adventure_choice = st.selectbox(t["adventurous"], ["any", "yes", "no"],
+            format_func=lambda x: {"any":t["adventure_any"], "yes":t["adventure_yes"], "no":t["adventure_no"]}[x])
+        use_favorites = st.checkbox(t["use_favorites"])
+    st.caption(t["not_verified"])
     if st.button(t["recommend_btn"], use_container_width=True):
+        favorite_restaurants = [r for r in all_restaurants if r["name"] in st.session_state.favorites]
         scored = []
         for r in all_restaurants:
             score, reasons = 0.0, []
             rating = current_rating(r)
-            # 실제 이용자 리뷰가 있을 때만 평점을 추천 점수에 반영합니다.
             if rating is not None and reviews_for(r["name"]):
                 score += rating / 5
-                reasons.append(f'⭐ {rating:.1f}')
-            if spicy_choice == "🌶️ 매운 음식":
-                if r.get("spicy") is True:
-                    score += 2; reasons.append("🌶️")
-                elif r.get("spicy") is False:
-                    score -= 1
-            elif spicy_choice == "🌿 맵지 않은 음식":
-                if r.get("spicy") is False:
-                    score += 2; reasons.append("🌿")
-                elif r.get("spicy") is True:
-                    score -= 1
-            if budget_choice != t["all"] and price_match(r, budget_choice):
-                score += 1; reasons.append(t["price_filter"])
-            if category_choice != t["all"] and category_display(r) == category_choice:
-                score += 3; reasons.append(category_choice)
+            if spicy_choice != "any" and r.get("spicy") is not None:
+                if r["spicy"] == (spicy_choice == "hot"):
+                    score += 2; reasons.append(t["spicy_hot"] if spicy_choice == "hot" else t["spicy_mild"])
+            if budget_choice != t["all"] and r.get("price_level") != "unknown" and price_match(r, budget_choice):
+                score += 2; reasons.append(t["price_filter"])
+            if category_choice is not None and r["category"] == category_choice:
+                score += 4; reasons.append(CATEGORY_NAMES[category_choice])
             if area_choice != t["all"] and region_name(r) == area_choice:
-                score += 2; reasons.append(area_choice)
-            if tag_choice != t["all"] and tag_choice in r.get("tags", []):
-                score += 2; reasons.append(tag_choice)
-            if use_favorites and any(x in r["food"] or x in r.get("food_ko","") for x in st.session_state.favorites):
+                score += 4; reasons.append(area_choice)
+            if tag_choice is not None and tag_choice in r.get("tags", []):
+                score += 2; reasons.append(display_tag(tag_choice))
+            if purpose_choice is not None and purpose_choice in r.get("purposes", []):
+                score += 2; reasons.append(PURPOSE_LABELS[lang][purpose_choice])
+            if mood_choice is not None and r.get("mood") == mood_choice:
+                score += 2; reasons.append(MOOD_LABELS[lang][mood_choice])
+            if ingredient_choice is not None and r["category"] == ingredient_choice:
+                score += 2; reasons.append(CATEGORY_NAMES[ingredient_choice])
+            if hidden_choice == "hidden" and r.get("hidden"):
+                score += 3; reasons.append(t["hidden_only"])
+            if hidden_choice == "research" and r.get("data_source") == "local_research":
+                score += 3; reasons.append(t["research_only"])
+            if adventure_choice == "yes" and r.get("data_source") == "local_research":
+                score += 1; reasons.append(t["adventure_yes"])
+            if adventure_choice == "no" and favorite_restaurants and any(
+                f["category"] == r["category"] for f in favorite_restaurants):
+                score += 1; reasons.append(t["adventure_no"])
+            if use_favorites and favorite_restaurants and any(
+                f["food"] == r["food"] or f["category"] == r["category"] for f in favorite_restaurants):
                 score += 2; reasons.append(t["favorites"])
             scored.append((score, reasons, r))
-        scored.sort(key=lambda x: x[0], reverse=True)
-        st.success(t["recommend_btn"])
-        for rank, (score, reasons, r) in enumerate(scored[:3], 1):
+        scored.sort(key=lambda x: (-x[0], x[2]["name"]))
+        st.subheader(t["recommended_results"])
+        for rank, (score, reasons, r) in enumerate(scored[:5], 1):
             with st.container(border=True):
                 st.subheader(f'{rank}. {r["emoji"]} {display_restaurant(r)}')
                 st.write(f'{display_food(r)} · {display_location(r)} · {display_price(r)}')
@@ -4078,7 +4453,7 @@ elif menu == f'🏪 {t["owner"]}':
         st.divider()
         st.subheader(f'🔔 {t["notifications"]}')
         if matching_reviews:
-            st.warning(f'{len(matching_reviews)} new review(s) in this demo session.')
+            st.warning(t["alert_new_reviews"].format(count=len(matching_reviews)))
             for item in reversed(matching_reviews):
                 st.write(f'⭐ {item["rating"]}/5 · {item.get("review", "")}')
                 if item.get("phrase"): st.caption(f'{t["local_phrase"]}: {item["phrase"]}')
@@ -4090,7 +4465,7 @@ elif menu == f'🏪 {t["owner"]}':
             for report in reversed(st.session_state.reports):
                 st.write(f'**{report["restaurant"]}** · {report["type"]} · {report["details"]}')
         else:
-            st.caption("No correction requests in this demo session.")
+            st.caption(t["no_reports"])
 
 # ---------------------------------------------------------
 # 챌린지 및 리워드
@@ -4109,7 +4484,7 @@ elif menu == f'🎁 {t["reward"]}':
         st.success(t["challenge_success"])
         st.rerun()
     st.divider()
-    st.subheader("🗺️ Local food discovery")
+    st.subheader(f'🗺️ {t["food_tour"]}')
     visited_names = st.multiselect(t["visited"], [r["name"] for r in all_restaurants],
         format_func=lambda n: display_restaurant(next(r for r in all_restaurants if r["name"] == n)))
     st.progress(min(len(visited_names) / 3, 1.0))
