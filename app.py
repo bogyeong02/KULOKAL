@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 from urllib.parse import quote
+import json
+import html
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="KULOKAL", page_icon="🍜", layout="wide")
 
@@ -67,7 +70,7 @@ T = {
         "photo": "음식 사진 첨부(선택)", "review_success": "후기가 등록되었습니다! +50P",
         "recent_reviews": "이용자 후기", "no_reviews": "아직 작성된 후기가 없습니다.",
         "recommend_intro": "취향을 선택하면 조건에 맞는 맛집을 추천합니다.",
-        "spicy": "매운맛 선호", "food_type": "먹고 싶은 음식 종류",
+        "spicy": "매운맛 선호", "audio_play": "🔊 발음 듣기", "audio_slow": "🐢 천천히 듣기", "audio_unavailable": "이 기기에서 음성 재생을 지원하지 않습니다.", "audio_voice_note": "음성은 기기의 인도네시아어 음성 지원 여부에 따라 달라질 수 있습니다.", "spice_note": "맵기 단계는 개인 취향 선택용입니다. 조사된 음식점의 정확한 맵기 수준은 아직 확인되지 않았습니다.", "food_type": "먹고 싶은 음식 종류",
         "tag": "선호 태그", "use_favorites": "즐겨찾기한 음식과 비슷한 메뉴 우선",
         "recommend_btn": "맞춤 맛집 추천받기", "why": "추천 이유",
         "owner_dashboard": "음식점 운영자 대시보드", "manage": "가게 정보 관리",
@@ -200,7 +203,7 @@ T = {
         "photo": "Attach food photo (optional)", "review_success": "Review posted! +50P",
         "recent_reviews": "Community reviews", "no_reviews": "No reviews yet.",
         "recommend_intro": "Choose your preferences to discover restaurants that fit you.",
-        "spicy": "Spice preference", "food_type": "Food type",
+        "spicy": "Spice preference", "audio_play": "🔊 Listen", "audio_slow": "🐢 Slow playback", "audio_unavailable": "Audio playback is not supported on this device.", "audio_voice_note": "Pronunciation depends on the Indonesian voice available on your device.", "spice_note": "Spice levels describe your preference. Exact restaurant spice levels have not been verified.", "food_type": "Food type",
         "tag": "Preferred tag", "use_favorites": "Prioritize dishes similar to my favorites",
         "recommend_btn": "Get recommendations", "why": "Why we recommend it",
         "owner_dashboard": "Restaurant Owner Dashboard", "manage": "Manage restaurant information",
@@ -333,7 +336,7 @@ T = {
         "photo": "Lampirkan foto makanan (opsional)", "review_success": "Ulasan terkirim! +50P",
         "recent_reviews": "Ulasan komunitas", "no_reviews": "Belum ada ulasan.",
         "recommend_intro": "Pilih preferensi untuk menemukan restoran yang sesuai.",
-        "spicy": "Preferensi pedas", "food_type": "Jenis makanan",
+        "spicy": "Preferensi pedas", "audio_play": "🔊 Dengarkan", "audio_slow": "🐢 Putar perlahan", "audio_unavailable": "Perangkat ini tidak mendukung pemutaran suara.", "audio_voice_note": "Pengucapan bergantung pada ketersediaan suara bahasa Indonesia di perangkat Anda.", "spice_note": "Tingkat pedas adalah preferensi pengguna. Tingkat pedas setiap restoran belum diverifikasi.", "food_type": "Jenis makanan",
         "tag": "Tag pilihan", "use_favorites": "Utamakan makanan yang mirip dengan favorit saya",
         "recommend_btn": "Dapatkan rekomendasi", "why": "Alasan rekomendasi",
         "owner_dashboard": "Dasbor Pemilik Restoran", "manage": "Kelola informasi restoran",
@@ -3848,6 +3851,71 @@ FOOD_INFO = {
     }
 }
 
+# Six spice preference levels shown consistently across all three UI languages.
+# These are user preference categories, not verified restaurant spice ratings.
+SPICE_LEVEL_LABELS = {
+    "한국어": {
+        "any": "상관없음", "very_mild": "1단계 · 아주 순한맛", "mild": "2단계 · 순한맛",
+        "slightly_spicy": "3단계 · 약간 매운맛", "less_spicy": "4단계 · 덜 매운맛",
+        "medium": "5단계 · 중간맛", "very_spicy": "6단계 · 아주 매운맛",
+    },
+    "English": {
+        "any": "Any", "very_mild": "Level 1 · Very mild", "mild": "Level 2 · Mild",
+        "slightly_spicy": "Level 3 · Slightly spicy", "less_spicy": "Level 4 · Less spicy",
+        "medium": "Level 5 · Medium", "very_spicy": "Level 6 · Very spicy",
+    },
+    "Bahasa Indonesia": {
+        "any": "Bebas", "very_mild": "Tingkat 1 · Sangat tidak pedas", "mild": "Tingkat 2 · Tidak pedas",
+        "slightly_spicy": "Tingkat 3 · Sedikit pedas", "less_spicy": "Tingkat 4 · Kurang pedas",
+        "medium": "Tingkat 5 · Pedas sedang", "very_spicy": "Tingkat 6 · Sangat pedas",
+    },
+}
+SPICE_LEVEL_KEYS = ["any", "very_mild", "mild", "slightly_spicy", "less_spicy", "medium", "very_spicy"]
+
+
+def render_indonesian_speech(phrase_text, translations):
+    """Client-side speech synthesis. No API keys or external requests required.
+
+    The playback language is always id-ID; only the button text changes with UI language.
+    Audio is user-initiated to comply with browser autoplay restrictions.
+    """
+    phrase_js = json.dumps(str(phrase_text), ensure_ascii=False).replace("<", "\\u003c")
+    button_normal = html.escape(translations["audio_play"], quote=True)
+    button_slow = html.escape(translations["audio_slow"], quote=True)
+    not_supported = html.escape(translations["audio_unavailable"])
+    # The HTML is rendered through components.html, not st.markdown, to avoid literal HTML display.
+    components.html(f"""
+    <div style="display:flex;flex-wrap:wrap;gap:10px;font-family:system-ui,sans-serif;">
+      <button id="normal" style="padding:10px 16px;border-radius:10px;border:1px solid #d5d8df;background:#fff;cursor:pointer;font-size:15px;">{button_normal}</button>
+      <button id="slow" style="padding:10px 16px;border-radius:10px;border:1px solid #d5d8df;background:#fff;cursor:pointer;font-size:15px;">{button_slow}</button>
+      <span id="status" role="status" style="font-size:13px;align-self:center;color:#555;"></span>
+    </div>
+    <script>
+      const textToSpeak = {phrase_js};
+      const status = document.getElementById('status');
+      const synth = window.speechSynthesis;
+      function speak(rate) {{
+        if (!synth || typeof SpeechSynthesisUtterance === 'undefined') {{
+          status.textContent = {json.dumps(not_supported, ensure_ascii=False)};
+          return;
+        }}
+        synth.cancel();
+        const utterance = new SpeechSynthesisUtterance(textToSpeak);
+        utterance.lang = 'id-ID';
+        utterance.rate = rate;
+        const voices = synth.getVoices();
+        const idVoice = voices.find(v => v.lang.toLowerCase() === 'id-id') ||
+                        voices.find(v => v.lang.toLowerCase().startsWith('id-'));
+        if (idVoice) utterance.voice = idVoice;
+        utterance.onerror = () => {{ status.textContent = {json.dumps(not_supported, ensure_ascii=False)}; }};
+        utterance.onstart = () => {{ status.textContent = ''; }};
+        synth.speak(utterance);
+      }}
+      document.getElementById('normal').addEventListener('click', () => speak(1.0));
+      document.getElementById('slow').addEventListener('click', () => speak(0.72));
+    </script>
+    """, height=65)
+
 PHRASES = [{'id': 'Halo', 'ko': '안녕하세요', 'en': 'Hello', 'pron': '할로', 'meaning': '인사할 때', 'category': 'greetings'},
  {'id': 'Selamat pagi.', 'ko': '좋은 아침이에요.', 'en': 'Good morning.', 'pron': '슬라맛 빠기', 'meaning': '아침 인사', 'category': 'greetings'},
  {'id': 'Selamat siang.',
@@ -4668,6 +4736,8 @@ elif menu == f'💬 {t["language"]}':
     c2.metric("🇰🇷 한국어", p["ko"])
     c3.metric("🇺🇸 English", p["en"])
     st.info(f'🗣️ **{t["pronunciation"]}:** {p["pron"] if lang == "한국어" else PHRASE_ROMANIZATION[p["id"]]}')
+    render_indonesian_speech(p["id"], t)
+    st.caption(t["audio_voice_note"])
     st.caption(p["meaning"] if lang == "한국어" else PHRASE_CONTEXT[p["id"]][0 if lang == "English" else 1])
     if p["category"] == "diet":
         st.caption({
@@ -4923,8 +4993,11 @@ elif menu == f'✨ {t["recommend"]}':
     st.title(f'✨ {t["recommend"]}')
     st.write(t["recommend_intro"])
     c1, c2 = st.columns(2)
-    spicy_choice = c1.selectbox(t["spicy"], ["any", "hot", "mild"],
-        format_func=lambda k: {"any":t["all"], "hot":t["spicy_hot"], "mild":t["spicy_mild"]}[k])
+    spicy_choice = c1.selectbox(
+        t["spicy"], SPICE_LEVEL_KEYS,
+        format_func=lambda k: SPICE_LEVEL_LABELS[lang][k],
+        key="spicy_preference_six_levels",
+    )
     budget_choice = c2.selectbox(t["price_filter"], [t["all"], t["budget"], t["mid"], t["high"]])
     c3, c4 = st.columns(2)
     category_choice = c3.selectbox(t["food_type"], [None] + list(CATEGORY_NAMES.keys()),
@@ -4948,6 +5021,7 @@ elif menu == f'✨ {t["recommend"]}':
             format_func=lambda x: {"any":t["adventure_any"], "yes":t["adventure_yes"], "no":t["adventure_no"]}[x])
         use_favorites = st.checkbox(t["use_favorites"])
     st.caption(t["not_verified"])
+    st.caption(t["spice_note"])
     if st.button(t["recommend_btn"], use_container_width=True):
         favorite_restaurants = [r for r in all_restaurants if r["name"] in st.session_state.favorites]
         scored = []
@@ -4957,8 +5031,12 @@ elif menu == f'✨ {t["recommend"]}':
             if rating is not None and reviews_for(r["name"]):
                 score += rating / 5
             if spicy_choice != "any" and r.get("spicy") is not None:
-                if r["spicy"] == (spicy_choice == "hot"):
-                    score += 2; reasons.append(t["spicy_hot"] if spicy_choice == "hot" else t["spicy_mild"])
+                # Existing demo data stores only a boolean spicy flag, not a verified 1–6 rating.
+                # Use a broad preference match; never claim an exact restaurant spice level.
+                wants_spicy = spicy_choice in {"slightly_spicy", "less_spicy", "medium", "very_spicy"}
+                if bool(r["spicy"]) == wants_spicy:
+                    score += 2
+                    reasons.append(SPICE_LEVEL_LABELS[lang][spicy_choice])
             if budget_choice != t["all"] and r.get("price_level") != "unknown" and price_match(r, budget_choice):
                 score += 2; reasons.append(t["price_filter"])
             if category_choice is not None and r["category"] == category_choice:
