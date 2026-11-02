@@ -4772,13 +4772,75 @@ elif menu == f'⭐ {t["review"]}':
     st.title(f'⭐ {t["review"]}')
     st.write(t["report_review"])
     review_tab, community_tab = st.tabs([f'⭐ {t["review_tab"]}', f'💬 {t["community_tab"]}'])
+    
     with review_tab:
+        search_labels = {
+            "한국어": (
+                "🔎 음식점 검색",
+                "음식점 이름, 메뉴, 지역 입력",
+                "목록에 없는 음식점 직접 입력"
+            ),
+            "English": (
+                "🔎 Search restaurants",
+                "Enter restaurant, food, or region",
+                "Enter a restaurant not listed"
+            ),
+            "Bahasa Indonesia": (
+                "🔎 Cari restoran",
+                "Masukkan restoran, makanan, atau daerah",
+                "Masukkan restoran yang belum terdaftar"
+            ),
+        }
+
+        search_label, search_hint, manual_label = search_labels.get(
+            lang, search_labels["한국어"]
+        )
+
+        restaurant_query = st.text_input(
+            search_label,
+            placeholder=search_hint
+        ).strip().casefold()
+
+        matching_restaurants = [
+            r for r in all_restaurants
+            if not restaurant_query or restaurant_query in " ".join(
+                str(r.get(k, "")) for k in (
+                    "name", "name_ko", "food", "food_ko",
+                    "location", "address", "area", "province"
+                )
+            ).casefold()
+        ]
+
+        restaurant_lookup = {
+            r["name"]: r for r in matching_restaurants
+        }
+
         with st.form("review_form", clear_on_submit=True):
-            restaurant_names = [r["name"] for r in all_restaurants]
-            selected_review_restaurant = st.selectbox(
-                t["visited"], restaurant_names,
-                format_func=lambda n: display_restaurant(next(r for r in all_restaurants if r["name"] == n))
-            )
+            if matching_restaurants:
+                selected_review_restaurant = st.selectbox(
+                    t["visited"],
+                    list(restaurant_lookup),
+                    format_func=lambda name: display_restaurant(
+                        restaurant_lookup[name]
+                    )
+                )
+
+                if st.checkbox(manual_label):
+                    selected_review_restaurant = st.text_input(
+                        manual_label + " ✏️"
+                    ).strip()
+
+            else:
+                st.info({
+                    "한국어": "검색 결과가 없어요. 음식점 이름을 직접 입력해 주세요.",
+                    "English": "No matches. Please enter the restaurant name.",
+                    "Bahasa Indonesia": "Tidak ditemukan. Silakan masukkan nama restoran.",
+                }.get(lang, "검색 결과가 없어요."))
+
+                selected_review_restaurant = st.text_input(
+                    manual_label
+                ).strip()
+
             overall = st.slider(t["stars"], 1, 5, 5)
             c1, c2, c3 = st.columns(3)
             taste = c1.slider(t["taste"], 1, 5, 5)
